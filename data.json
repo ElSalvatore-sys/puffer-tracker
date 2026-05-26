@@ -236,6 +236,136 @@
       "durationMin": 840,
       "ts": "2026-05-26T11:00:00",
       "progressAfter": 88
+    },
+    {
+      "id": 26,
+      "project": "bloghead",
+      "title": "App rebuilt cleanly on a real iPhone",
+      "detail": "Tracked down the existing Bloghead app, rebuilt it from scratch, and got it running on a real iPhone 13 Pro Max with zero errors and zero warnings. Several small problems that had crept in were fixed along the way — the cleanest possible starting point before the big sprint.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-05-10T10:00:00",
+      "progressAfter": 68
+    },
+    {
+      "id": 27,
+      "project": "bloghead",
+      "title": "Full audit: 10 real problems found",
+      "detail": "Rather than assume the app was in good shape, we ran a top-to-bottom inspection of every feature. Found ten significant gaps — including a booking fee set to the wrong percentage and a privacy policy promising a feature that didn't actually exist. Every decision that followed was based on facts, not guesswork. Catching this early saved enormous time and protected the business.",
+      "status": "done",
+      "durationMin": 480,
+      "ts": "2026-05-11T15:00:00",
+      "progressAfter": 71
+    },
+    {
+      "id": 28,
+      "project": "bloghead",
+      "title": "Booking fee fixed; false privacy claim removed",
+      "detail": "Two urgent corrections: the platform fee was wrong (10% instead of the intended 8%) — every booking would have overcharged artists. The privacy policy also described an AI feature we hadn't built, which is a real legal risk under German consumer law. Both fixed with small but very high-consequence changes.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-05-12T11:00:00",
+      "progressAfter": 73
+    },
+    {
+      "id": 29,
+      "project": "bloghead",
+      "title": "Animated new-user welcome journey built",
+      "detail": "Brand-new first-time experience: a polished logo introduction, a three-page tour explaining what Bloghead does (Discover → Book → Connect), a role-selection screen, and a clear notification explanation before asking permission. Fixed a hidden bug where choosing 'I'm an artist' on the welcome screen was being silently thrown away — the choice now carries through properly.",
+      "status": "done",
+      "durationMin": 660,
+      "ts": "2026-05-13T16:00:00",
+      "progressAfter": 77
+    },
+    {
+      "id": 30,
+      "project": "bloghead",
+      "title": "Privacy consent + report/block tools added",
+      "detail": "During sign-up, people now clearly agree to terms and privacy (required) and can separately choose marketing emails and anonymous statistics (optional) — proper DSGVO consent done right. Also built report and block tools: anyone can report inappropriate content or block a user, who then disappears from their view across the entire app. Required for Apple App Store approval.",
+      "status": "done",
+      "durationMin": 720,
+      "ts": "2026-05-15T17:00:00",
+      "progressAfter": 81
+    },
+    {
+      "id": 31,
+      "project": "bloghead",
+      "title": "Organizer and Crew roles built end to end",
+      "detail": "Expanded who can use Bloghead. Organizers (event planners) existed on the welcome screen but were secretly treated as regular fans — fixed properly end to end. Crew (sound engineers, lighting techs, stage crew, security) is a brand-new role with its own profile showing specializations, equipment, and hourly rates. Real events need more than just an artist and a venue.",
+      "status": "done",
+      "durationMin": 480,
+      "ts": "2026-05-16T16:00:00",
+      "progressAfter": 83
+    },
+    {
+      "id": 32,
+      "project": "bloghead",
+      "title": "Old platform leftovers fully cleared out",
+      "detail": "The app was originally built on a different platform that we had since moved away from. Over 1,000 leftover files were still scattered through the code — confusing and potentially a red flag during Apple's review. All of it removed cleanly: old files, old config, outdated documentation rewritten to reflect reality. Like clearing the workshop before building the fine furniture.",
+      "status": "done",
+      "durationMin": 480,
+      "ts": "2026-05-17T14:00:00",
+      "progressAfter": 84
+    },
+    {
+      "id": 33,
+      "project": "bloghead",
+      "title": "Artist availability + tech rider now working",
+      "detail": "Two features had screens in the app but weren't connected to anything — they silently showed nothing. Fixed both: artists can now block out dates they're unavailable, and specify their sound, lighting, and stage requirements. Rather than guess what a weekly schedule feature should look like, we chose to ask real artists first — build what people actually need.",
+      "status": "done",
+      "durationMin": 480,
+      "ts": "2026-05-18T15:00:00",
+      "progressAfter": 85
+    },
+    {
+      "id": 34,
+      "project": "bloghead",
+      "title": "Full digital contract system built",
+      "detail": "Complete contract engine for bookings: generates a proper, legally structured contract in German, English, or French; both sides digitally sign; the contract locks permanently once signed and can never be secretly altered — a strict legal requirement. Keeps a tamper-proof history of every action. Cancellation rules come in presets (Relaxed, Standard, Strict, Festival, Custom). Reviewed by a German contract-law specialist before a line of code was written.",
+      "status": "done",
+      "durationMin": 960,
+      "ts": "2026-05-20T18:00:00",
+      "progressAfter": 86
+    },
+    {
+      "id": 35,
+      "project": "bloghead",
+      "title": "Invoice + credit note engine built",
+      "detail": "Automatic, legally compliant invoicing: when an event is completed, the system creates a proper invoice, calculates the correct German VAT (small-business exemption, 7% cultural rate, or 19% standard — whichever applies), assigns a gap-free invoice number, generates a PDF, and emails it automatically. Cancelled bookings trigger a matching credit note. All invoices are locked and tamper-proof. German tax law is unforgiving, and this handles it properly so everyone stays compliant without thinking about it.",
+      "status": "done",
+      "durationMin": 1080,
+      "ts": "2026-05-23T17:00:00",
+      "progressAfter": 88
+    },
+    {
+      "id": 36,
+      "project": "bloghead",
+      "title": "Full mobile experience for all new features",
+      "detail": "Every new system brought to life on the actual phone: Crew sign-up and profiles, an Events area for organizers and venues, viewing and signing contracts, a full Accounting area (Buchhaltung) where users see all their invoices and can view or download the PDFs, and smart deep links so tapping a notification opens exactly the right screen. Each role only sees what's relevant to them — fans get a simple app, professionals get the full toolkit.",
+      "status": "done",
+      "durationMin": 720,
+      "ts": "2026-05-25T09:00:00",
+      "progressAfter": 91
+    },
+    {
+      "id": 37,
+      "project": "bloghead",
+      "title": "Sign contracts without installing the app",
+      "detail": "The most innovative piece of the sprint. Technical crew (sound, lighting) often work informally and won't install a new app just to sign one contract. Solution: an organizer invites a crew member by email, who clicks a secure link and signs the contract directly in their web browser — no app, no account needed. Legally valid under German law with a full audit trail. They only create an account later, when there's money to be paid — the moment it actually benefits them.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-05-25T15:00:00",
+      "progressAfter": 92
+    },
+    {
+      "id": 38,
+      "project": "bloghead",
+      "title": "Publishing pipeline fixed and automated",
+      "detail": "Discovered during the audit that a batch of completed work had been built but never actually published to the live server — features we thought were live, weren't. Traced the cause, published everything correctly, and made the process automatic going forward so this can't happen again. Also strengthened how the database updates itself safely.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-05-26T08:00:00",
+      "progressAfter": 93
     }
   ]
 }
