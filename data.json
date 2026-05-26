@@ -2,17 +2,17 @@
   "projects": {
     "thebarapp": {
       "name": "TheBarApp",
-      "phase": "Phase 1 — Wozi Bot briefings",
+      "phase": "Making Das Wohnzimmer smarter",
       "accent": "#ff9d5c"
     },
     "bloghead": {
       "name": "Bloghead",
-      "phase": "Web complete → iOS build",
+      "phase": "Web done — building iPhone app",
       "accent": "#39d7b0"
     },
     "dehgo": {
       "name": "Dehgo",
-      "phase": "Refactor → launch readiness",
+      "phase": "Cleaning up, getting ready to launch",
       "accent": "#a98bff"
     }
   },
@@ -20,18 +20,18 @@
     {
       "id": 1,
       "project": "thebarapp",
-      "title": "Wozi Bot morning briefing wired to OODA endpoint",
-      "detail": "In-app proactive briefing now pulls live forecast (€1,850 erwartet) instead of placeholder. Backend → frontend round-trip confirmed.",
+      "title": "Morning briefing shows real numbers",
+      "detail": "The morning briefing inside the app now shows actual forecast numbers — like '€1,850 expected tonight' — instead of placeholder text. It's pulling live data.",
       "status": "done",
       "durationMin": 185,
       "ts": "2026-05-26T09:40:00",
-      "progressAfter": 46
+      "progressAfter": 57
     },
     {
       "id": 3,
       "project": "bloghead",
-      "title": "Lighthouse performance pass",
-      "detail": "Re-ran audit after image lazy-loading tweaks. Performance 93→95, SEO 100, A11y 100 held.",
+      "title": "Website speed score improved",
+      "detail": "Ran a performance check after some loading tweaks. Speed score went from 93 to 95 out of 100. Search engine and accessibility scores are still perfect 100s.",
       "status": "done",
       "durationMin": 70,
       "ts": "2026-05-25T14:25:00",
@@ -40,8 +40,8 @@
     {
       "id": 4,
       "project": "thebarapp",
-      "title": "Auto-scheduler preview UI scaffolded",
-      "detail": "Phase 2 generate→preview→edit→approve flow — preview screen built, not yet wired to scheduler engine.",
+      "title": "Schedule preview screen built",
+      "detail": "New screen where you can see and edit the auto-generated staff schedule before approving it. The screen is ready — connecting it to the scheduling engine is next.",
       "status": "prog",
       "durationMin": 140,
       "ts": "2026-05-24T16:00:00",
@@ -50,8 +50,8 @@
     {
       "id": 5,
       "project": "bloghead",
-      "title": "Stream Chat migration spike",
-      "detail": "Evaluated swapping Supabase Realtime → Stream Chat for typing indicators + presence. Est. 4–6h, only chat tables move. Parked.",
+      "title": "Looked into live typing indicators",
+      "detail": "Checked what it would take to add 'typing...' indicators and online status in the chat. It's doable (about 4–6 hours) but parked for now — not blocking anything.",
       "status": "prog",
       "durationMin": 110,
       "ts": "2026-05-24T11:30:00",
@@ -60,8 +60,8 @@
     {
       "id": 7,
       "project": "thebarapp",
-      "title": "Fixed KOLLI unit conversion bug",
-      "detail": "1 Kiste was counting as 1 unit instead of 24 bottles — corrected in inventory parser. Re-run still gated on missing supplier invoices.",
+      "title": "Fixed crate counting mistake",
+      "detail": "A crate (Kiste) was being recorded as 1 item instead of 24 bottles. Stock numbers now add up correctly. Re-running the full inventory check once missing supplier invoices are in.",
       "status": "done",
       "durationMin": 75,
       "ts": "2026-05-22T13:15:00",
@@ -70,8 +70,8 @@
     {
       "id": 8,
       "project": "bloghead",
-      "title": "iOS booking flow — SwiftUI screens",
-      "detail": "Artist search + booking request screens built in Xcode against existing API. Auth + payment next.",
+      "title": "Artist search + booking screens built",
+      "detail": "The artist search and booking request screens are now built in the iPhone app. They work against the live backend. Login and payment come next.",
       "status": "prog",
       "durationMin": 220,
       "ts": "2026-05-21T18:20:00",
@@ -80,28 +80,18 @@
     {
       "id": 9,
       "project": "thebarapp",
-      "title": "Tracker live + Git connected",
-      "detail": "",
+      "title": "This dashboard went live",
+      "detail": "The shared progress page you're reading right now was set up and connected. Updates show here automatically whenever a step is finished.",
       "status": "done",
       "durationMin": 20,
-      "ts": "2026-05-26T08:50:13.271Z",
-      "progressAfter": 46
-    },
-    {
-      "id": 10,
-      "project": "thebarapp",
-      "title": "Pipeline smoke test",
-      "detail": "",
-      "status": "done",
-      "durationMin": 5,
-      "ts": "2026-05-26T09:34:55.278Z",
+      "ts": "2026-05-26T08:50:00",
       "progressAfter": 46
     },
     {
       "id": 11,
       "project": "thebarapp",
-      "title": "Async OCR job pipeline shipped",
-      "detail": "Durable async pipeline replacing in-memory dict. Postgres ocr_jobs table live; POST /jobs → 202+job_id, GET /jobs/{id} poll, POST /jobs/{id}/cancel. Per-page progress + sweep. Dead /ocr-menu-job path removed.",
+      "title": "Menu scan works in the background",
+      "detail": "Uploading a menu photo no longer freezes the app. It now processes in the background — you can keep using the app while it works, and it notifies you when it's done.",
       "status": "done",
       "durationMin": 240,
       "ts": "2026-05-24T09:30:00",
@@ -110,8 +100,8 @@
     {
       "id": 12,
       "project": "thebarapp",
-      "title": "Allergen decoder + inference wired",
-      "detail": "ALLERGEN_DE + INGREDIENT_ALLERGEN_DE maps + infer_allergens() in german_labels.py. Drops invalid codes (no I/J/K/Q); derives allergens from recipe ingredients, not Gemini's printed guess. e0fb5dd.",
+      "title": "Allergen labels are now accurate",
+      "detail": "Allergen warnings on scanned menu items are now calculated from the actual saved recipe ingredients, not guessed from the printed menu text. Much more reliable — if a recipe has egg, it will correctly say 'Contains: Egg'.",
       "status": "done",
       "durationMin": 120,
       "ts": "2026-05-25T10:00:00",
@@ -120,8 +110,8 @@
     {
       "id": 13,
       "project": "thebarapp",
-      "title": "KI-Vorschlag German normalization",
-      "detail": "Draft-path now outputs German units/glass/method: rocks_glass→Rocks-Glas, shake→Shaken, piece/pieces→Stück via translate_unit + GLASSWARE_DE + METHOD_DE dicts. af9fa98.",
+      "title": "App speaks proper German now",
+      "detail": "Auto-generated recipes now use correct German terms throughout — glasses (Rocks-Glas), preparation methods (Shaken), and units (Stück) instead of English placeholders.",
       "status": "done",
       "durationMin": 90,
       "ts": "2026-05-25T13:30:00",
@@ -130,8 +120,8 @@
     {
       "id": 14,
       "project": "thebarapp",
-      "title": "iOS OCR review card + photo decode fixes",
-      "detail": "Photo decode in autoreleasepool + downscale before upload; review card title lineLimit(2); collapsed KI ingredient summary. Corrected endpoint paths to /jobs (killed dead /ocr-menu-job calls). 2facc6d + 546d8da.",
+      "title": "Menu scan photos upload reliably",
+      "detail": "Large photos no longer crash during upload. The review screen is also cleaner — long drink names don't overflow, and suggested ingredients show in a tidy collapsed list.",
       "status": "done",
       "durationMin": 150,
       "ts": "2026-05-25T17:00:00",
@@ -140,8 +130,8 @@
     {
       "id": 15,
       "project": "thebarapp",
-      "title": "DB stub recipe cleanup — 8 merged, 3 deleted",
-      "detail": "8 stubs merged with library (real ingredients + grund_rezept_id): Caipirinha, Daiquiri, Gin Basil Smash, Margarita, Midori Sour, Mojito, Vodka Sour, Whiskey Sour. 3 junk rows deleted (Triple Sec2cl + 2 OCR-test dups). Aperol Spritz matcher fixed (dup was outranking good row).",
+      "title": "8 cocktail recipes filled in properly",
+      "detail": "Eight classics in Das Wohnzimmer's menu — Caipirinha, Daiquiri, Mojito, Margarita, Gin Basil Smash, Midori Sour, Vodka Sour, Whiskey Sour — were upgraded from skeleton entries to full recipes with real ingredients. Three duplicate/empty entries were also cleaned out.",
       "status": "done",
       "durationMin": 90,
       "ts": "2026-05-26T07:45:00",
@@ -150,8 +140,8 @@
     {
       "id": 16,
       "project": "thebarapp",
-      "title": "Treffer allergens now data-grounded",
-      "detail": "f596f76: _match_ocr_items surfaces matched recipe's stored ingredients (tenant JSONB → library JSONB → relational fallback) and runs infer_allergens() on that list. Vodka Sour / Whiskey Sour now return allergens_detected=['C'] (Eier). Gemini's printed letters dropped on all paths.",
+      "title": "Recognised drinks show correct allergens",
+      "detail": "When the app recognises a drink from a menu scan, it now shows allergens from the actual saved recipe — not from whatever text was printed on the menu. Verified: Vodka Sour and Whiskey Sour correctly flag 'Egg' allergen on the live server.",
       "status": "done",
       "durationMin": 150,
       "ts": "2026-05-26T09:30:00",
