@@ -16,7 +16,11 @@
  *   --push      git add + commit + push  → triggers Vercel redeploy
  */
 import { readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
+
+const __dir = dirname(fileURLToPath(import.meta.url));
 
 const args = process.argv.slice(2);
 const get = (f) => { const i = args.indexOf(f); return i >= 0 ? args[i + 1] : undefined; };
@@ -72,9 +76,9 @@ console.log(`✓ logged #${nextId} · ${data.projects[project].name} · "${title
 
 if (has('--push')) {
   try {
-    execSync('git add data.json', { stdio: 'inherit' });
-    execSync(`git commit -m ${JSON.stringify(`log: ${project} — ${title}`)}`, { stdio: 'inherit' });
-    execSync('git push', { stdio: 'inherit' });
+    execSync('git add data.json', { cwd: __dir, stdio: 'inherit' });
+    execSync(`git commit -m ${JSON.stringify(`log: ${project} — ${title}`)}`, { cwd: __dir, stdio: 'inherit' });
+    execSync('git push', { cwd: __dir, stdio: 'inherit' });
     console.log('✓ pushed → Vercel will redeploy (~15s)');
   } catch (e) {
     console.error('git push failed:', e.message);

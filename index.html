@@ -17,10 +17,6 @@
     --text:#eceef2;
     --muted:#8b909c;
     --muted-2:#5f636e;
-    /* per-project accents */
-    --bar:#ff9d5c;
-    --blog:#39d7b0;
-    --wozi:#a98bff;
     --done:#3ddc84;
     --prog:#ffc24b;
     --block:#ff6b6b;
@@ -54,7 +50,7 @@
   .brand{display:flex;flex-direction:column;gap:6px}
   .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted-2)}
   h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(30px,5vw,46px);letter-spacing:-.02em;line-height:1}
-  h1 .accent{background:linear-gradient(92deg,var(--bar),var(--wozi) 60%,var(--blog));-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 .accent{background:linear-gradient(92deg,#ff9d5c,#a98bff 60%,#39d7b0);-webkit-background-clip:text;background-clip:text;color:transparent}
   .sub{color:var(--muted);font-size:14px;max-width:46ch}
   .meta{text-align:right;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
   .clock{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--text)}
@@ -97,9 +93,6 @@
   .fbtn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;color:var(--muted);background:var(--panel);border:1px solid var(--line);padding:7px 13px;border-radius:999px;cursor:pointer;transition:all .18s}
   .fbtn:hover{color:var(--text);border-color:var(--muted-2)}
   .fbtn.active{color:var(--bg);background:var(--text);border-color:var(--text);font-weight:700}
-  .fbtn[data-f="thebarapp"].active{background:var(--bar);border-color:var(--bar)}
-  .fbtn[data-f="bloghead"].active{background:var(--blog);border-color:var(--blog)}
-  .fbtn[data-f="wozivoice"].active{background:var(--wozi);border-color:var(--wozi)}
 
   .feed{position:relative;padding-left:30px}
   .feed::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--line),transparent)}
@@ -167,19 +160,18 @@
 <script>
 const FALLBACK = {
   projects: {
-    thebarapp: { name:"TheBarApp",  accent:"var(--bar)",  phase:"Phase 1 — Wozi Bot briefings" },
-    bloghead:  { name:"Bloghead",   accent:"var(--blog)", phase:"Web complete → iOS build" },
-    wozivoice: { name:"Wozi Voice", accent:"var(--wozi)", phase:"Phase 0 done · legal gate" }
+    thebarapp: { name:"TheBarApp", phase:"Phase 1 — Wozi Bot briefings", accent:"#ff9d5c" },
+    bloghead:  { name:"Bloghead",  phase:"Web complete → iOS build",      accent:"#39d7b0" },
+    dehgo:     { name:"Dehgo",     phase:"Refactor → launch readiness",   accent:"#a98bff" }
   },
   log: [
     { id:1, project:"thebarapp", title:"Wozi Bot morning briefing wired to OODA endpoint", detail:"In-app proactive briefing now pulls live forecast (€1,850 erwartet) instead of placeholder. Backend → frontend round-trip confirmed.", status:"done", durationMin:185, ts:"2026-05-26T09:40:00", progressAfter:46 },
-    { id:2, project:"wozivoice", title:"DSGVO consent script — first draft for lawyer review", detail:"Inbound-call 'Sag Ja oder drück 1' flow drafted. Sent to DE IT-Recht lawyer — long-pole blocker for Phase 3.3.", status:"block", durationMin:95, ts:"2026-05-25T17:10:00", progressAfter:34 },
     { id:3, project:"bloghead", title:"Lighthouse performance pass", detail:"Re-ran audit after image lazy-loading tweaks. Performance 93→95, SEO 100, A11y 100 held.", status:"done", durationMin:70, ts:"2026-05-25T14:25:00", progressAfter:91 },
     { id:4, project:"thebarapp", title:"Auto-scheduler preview UI scaffolded", detail:"Phase 2 generate→preview→edit→approve flow — preview screen built, not yet wired to scheduler engine.", status:"prog", durationMin:140, ts:"2026-05-24T16:00:00", progressAfter:44 },
     { id:5, project:"bloghead", title:"Stream Chat migration spike", detail:"Evaluated swapping Supabase Realtime → Stream Chat for typing indicators + presence. Est. 4–6h, only chat tables move. Parked.", status:"prog", durationMin:110, ts:"2026-05-24T11:30:00", progressAfter:89 },
-    { id:6, project:"wozivoice", title:"Vapi EU data residency / DPA request sent", detail:"Formal request raised for EU residency + DPA. Waiting on Vapi. Blocks AVV paperwork chain.", status:"block", durationMin:40, ts:"2026-05-23T15:45:00", progressAfter:31 },
     { id:7, project:"thebarapp", title:"Fixed KOLLI unit conversion bug", detail:"1 Kiste was counting as 1 unit instead of 24 bottles — corrected in inventory parser. Re-run still gated on missing supplier invoices.", status:"done", durationMin:75, ts:"2026-05-22T13:15:00", progressAfter:41 },
-    { id:8, project:"bloghead", title:"iOS booking flow — SwiftUI screens", detail:"Artist search + booking request screens built in Xcode against existing API. Auth + payment next.", status:"prog", durationMin:220, ts:"2026-05-21T18:20:00", progressAfter:86 }
+    { id:8, project:"bloghead", title:"iOS booking flow — SwiftUI screens", detail:"Artist search + booking request screens built in Xcode against existing API. Auth + payment next.", status:"prog", durationMin:220, ts:"2026-05-21T18:20:00", progressAfter:86 },
+    { id:9, project:"thebarapp", title:"Tracker live + Git connected", detail:"", status:"done", durationMin:20, ts:"2026-05-26T08:50:13.271Z", progressAfter:46 }
   ]
 };
 
@@ -191,7 +183,6 @@ async function loadData(){
   }catch(e){ return FALLBACK; }
 }
 
-const ACCENTS = { thebarapp:'var(--bar)', bloghead:'var(--blog)', wozivoice:'var(--wozi)' };
 const fmtH = m => (m/60).toFixed(1);
 function timeAgo(ts){
   const d=(Date.now()-new Date(ts))/1000;
@@ -230,7 +221,7 @@ function renderCards(){
     const s=computeProject(key);
     const stClass = s.status==='done'?'done':s.status==='block'?'block':'prog';
     const stTxt = s.status==='done'?'On track':s.status==='block'?'Blocked':'In progress';
-    return `<div class="card reveal" style="--c:${ACCENTS[key]};animation-delay:${i*90+120}ms">
+    return `<div class="card reveal" style="--c:${p.accent};animation-delay:${i*90+120}ms">
       <div class="glow"></div>
       <div class="top">
         <div><div class="pname">${p.name}</div><div class="pphase">${p.phase}</div></div>
@@ -251,8 +242,11 @@ function renderCards(){
 function renderFilters(){
   const f=['all',...Object.keys(DATA.projects)];
   document.getElementById('filters').innerHTML=f.map(k=>{
+    const isActive = k===activeFilter;
+    const accent = k!=='all' ? DATA.projects[k].accent : null;
+    const activeStyle = isActive && accent ? `background:${accent};border-color:${accent};color:var(--bg)` : '';
     const label = k==='all'?'All':DATA.projects[k].name;
-    return `<button class="fbtn ${k===activeFilter?'active':''}" data-f="${k}">${label}</button>`;
+    return `<button class="fbtn ${isActive?'active':''}" data-f="${k}" style="${activeStyle}">${label}</button>`;
   }).join('');
   document.querySelectorAll('.fbtn').forEach(b=>b.onclick=()=>{activeFilter=b.dataset.f;renderFilters();renderFeed();});
 }
@@ -262,7 +256,7 @@ function renderFeed(){
     .filter(l=>activeFilter==='all'||l.project===activeFilter)
     .sort((a,b)=>new Date(b.ts)-new Date(a.ts));
   document.getElementById('feed').innerHTML = items.map((l,i)=>{
-    const c=ACCENTS[l.project]; const pn=DATA.projects[l.project].name;
+    const proj=DATA.projects[l.project]; const c=proj?.accent||'#888'; const pn=proj?.name||l.project;
     const stClass=l.status==='done'?'done':l.status==='block'?'block':'prog';
     const stTxt=l.status==='done'?'Done':l.status==='block'?'Blocked':'In progress';
     return `<div class="entry ${stClass} reveal" style="--c:${c};animation-delay:${i*55}ms">

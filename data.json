@@ -2,15 +2,18 @@
   "projects": {
     "thebarapp": {
       "name": "TheBarApp",
-      "phase": "Phase 1 — Wozi Bot briefings"
+      "phase": "Phase 1 — Wozi Bot briefings",
+      "accent": "#ff9d5c"
     },
     "bloghead": {
       "name": "Bloghead",
-      "phase": "Web complete → iOS build"
+      "phase": "Web complete → iOS build",
+      "accent": "#39d7b0"
     },
-    "wozivoice": {
-      "name": "Wozi Voice",
-      "phase": "Phase 0 done · legal gate"
+    "dehgo": {
+      "name": "Dehgo",
+      "phase": "Refactor → launch readiness",
+      "accent": "#a98bff"
     }
   },
   "log": [
@@ -23,16 +26,6 @@
       "durationMin": 185,
       "ts": "2026-05-26T09:40:00",
       "progressAfter": 46
-    },
-    {
-      "id": 2,
-      "project": "wozivoice",
-      "title": "DSGVO consent script — first draft for lawyer review",
-      "detail": "Inbound-call 'Sag Ja oder drück 1' flow drafted. Sent to DE IT-Recht lawyer — long-pole blocker for Phase 3.3.",
-      "status": "block",
-      "durationMin": 95,
-      "ts": "2026-05-25T17:10:00",
-      "progressAfter": 34
     },
     {
       "id": 3,
@@ -63,16 +56,6 @@
       "durationMin": 110,
       "ts": "2026-05-24T11:30:00",
       "progressAfter": 89
-    },
-    {
-      "id": 6,
-      "project": "wozivoice",
-      "title": "Vapi EU data residency / DPA request sent",
-      "detail": "Formal request raised for EU residency + DPA. Waiting on Vapi. Blocks AVV paperwork chain.",
-      "status": "block",
-      "durationMin": 40,
-      "ts": "2026-05-23T15:45:00",
-      "progressAfter": 31
     },
     {
       "id": 7,
