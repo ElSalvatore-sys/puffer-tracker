@@ -86,6 +86,16 @@
       "durationMin": 20,
       "ts": "2026-05-26T08:50:13.271Z",
       "progressAfter": 46
+    },
+    {
+      "id": 10,
+      "project": "thebarapp",
+      "title": "Pipeline smoke test",
+      "detail": "",
+      "status": "done",
+      "durationMin": 5,
+      "ts": "2026-05-26T09:34:55.278Z",
+      "progressAfter": 46
     }
   ]
 }
