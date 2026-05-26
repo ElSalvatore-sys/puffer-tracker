@@ -146,6 +146,96 @@
       "durationMin": 150,
       "ts": "2026-05-26T09:30:00",
       "progressAfter": 57
+    },
+    {
+      "id": 17,
+      "project": "dehgo",
+      "title": "App builds cleanly — one-command setup",
+      "detail": "Fixed the build environment from scratch: updated the underlying tools to the latest versions and wrote a single-command local setup so any new machine can be fully running in minutes. First real foundation for everything that follows.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-05-12T10:00:00",
+      "progressAfter": 12
+    },
+    {
+      "id": 18,
+      "project": "dehgo",
+      "title": "Venue dashboard, job posting + settings done",
+      "detail": "Three major screens finished for venue owners: a live dashboard showing stats and recent jobs, a step-by-step job posting wizard (with legal minimum-wage enforcement — €12.81/h as required by German law), and a venue settings page. All 6 key flows tested end to end and passing.",
+      "status": "done",
+      "durationMin": 480,
+      "ts": "2026-05-14T17:00:00",
+      "progressAfter": 35
+    },
+    {
+      "id": 19,
+      "project": "dehgo",
+      "title": "Applicant review, chat + notifications wired",
+      "detail": "Venue owners can now see a ranked list of applicants for each job, view their profiles, accept or reject them, and chat with them. Workers automatically get a push notification the moment they're accepted or rejected. Phase 4 is fully complete.",
+      "status": "done",
+      "durationMin": 420,
+      "ts": "2026-05-16T18:00:00",
+      "progressAfter": 52
+    },
+    {
+      "id": 20,
+      "project": "dehgo",
+      "title": "Project moved to new MacBook — all working",
+      "detail": "Migrated the entire development setup from the old Mac mini to the new MacBook Pro. Database, app build, admin tools — all verified. The project was also pushed to GitHub for the first time (it had only ever existed locally until this point).",
+      "status": "done",
+      "durationMin": 270,
+      "ts": "2026-05-17T15:00:00",
+      "progressAfter": 55
+    },
+    {
+      "id": 21,
+      "project": "dehgo",
+      "title": "Privacy + safety features planned and started",
+      "detail": "Mapped out all the GDPR data-protection and content-moderation features the app needs before it can go public. Wrote a formal legal briefing with 9 questions for a lawyer — two of them (around data brokering and automated decisions) are hard blockers for launch. Also built the foundation: background job scheduler and email sending system.",
+      "status": "done",
+      "durationMin": 420,
+      "ts": "2026-05-19T17:00:00",
+      "progressAfter": 65
+    },
+    {
+      "id": 22,
+      "project": "dehgo",
+      "title": "Report + block system built",
+      "detail": "Users can now report each other (7 predefined reasons in German, max 10 per day) and block each other. Blocking hides the other person from your job feed in both directions and freezes the chat. Thoroughly tested — 95%+ test coverage on these features.",
+      "status": "done",
+      "durationMin": 480,
+      "ts": "2026-05-21T18:00:00",
+      "progressAfter": 72
+    },
+    {
+      "id": 23,
+      "project": "dehgo",
+      "title": "Fixed: app couldn't actually be logged into",
+      "detail": "Discovered that email/password login had never been connected — only Apple Sign-In existed. The whole signup and login flow is now properly wired. Fixing this revealed two crashes that had been hiding the entire time: the job feed was silently failing on every load, and all timestamps were being rejected app-wide. Both fixed.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-05-22T16:00:00",
+      "progressAfter": 78
+    },
+    {
+      "id": 24,
+      "project": "dehgo",
+      "title": "iOS tests restored + critical chat bug fixed",
+      "detail": "An automated hardening pass (36 minutes of agent time): the iOS test suite was brought back to life — 27 tests now run and pass (the suite had never compiled before). Fixed a bug where workers couldn't access the chat at all. Also corrected several mismatches between what the server sends and what the app expects.",
+      "status": "done",
+      "durationMin": 330,
+      "ts": "2026-05-23T15:00:00",
+      "progressAfter": 82
+    },
+    {
+      "id": 25,
+      "project": "dehgo",
+      "title": "App screens rebuilt to match the designs",
+      "detail": "None of the screens had ever been compared against the actual design mockups — they had the right colours and fonts but the wrong layouts. Fixed the comparison process, then rebuilt 6 screens to exactly match: worker job feed, job detail, job posting form, applicant list, venue onboarding, and the venue detail section. Design-accurate for the first time.",
+      "status": "done",
+      "durationMin": 840,
+      "ts": "2026-05-26T11:00:00",
+      "progressAfter": 88
     }
   ]
 }
