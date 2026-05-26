@@ -1,0 +1,98 @@
+{
+  "projects": {
+    "thebarapp": {
+      "name": "TheBarApp",
+      "phase": "Phase 1 — Wozi Bot briefings"
+    },
+    "bloghead": {
+      "name": "Bloghead",
+      "phase": "Web complete → iOS build"
+    },
+    "wozivoice": {
+      "name": "Wozi Voice",
+      "phase": "Phase 0 done · legal gate"
+    }
+  },
+  "log": [
+    {
+      "id": 1,
+      "project": "thebarapp",
+      "title": "Wozi Bot morning briefing wired to OODA endpoint",
+      "detail": "In-app proactive briefing now pulls live forecast (€1,850 erwartet) instead of placeholder. Backend → frontend round-trip confirmed.",
+      "status": "done",
+      "durationMin": 185,
+      "ts": "2026-05-26T09:40:00",
+      "progressAfter": 46
+    },
+    {
+      "id": 2,
+      "project": "wozivoice",
+      "title": "DSGVO consent script — first draft for lawyer review",
+      "detail": "Inbound-call 'Sag Ja oder drück 1' flow drafted. Sent to DE IT-Recht lawyer — long-pole blocker for Phase 3.3.",
+      "status": "block",
+      "durationMin": 95,
+      "ts": "2026-05-25T17:10:00",
+      "progressAfter": 34
+    },
+    {
+      "id": 3,
+      "project": "bloghead",
+      "title": "Lighthouse performance pass",
+      "detail": "Re-ran audit after image lazy-loading tweaks. Performance 93→95, SEO 100, A11y 100 held.",
+      "status": "done",
+      "durationMin": 70,
+      "ts": "2026-05-25T14:25:00",
+      "progressAfter": 91
+    },
+    {
+      "id": 4,
+      "project": "thebarapp",
+      "title": "Auto-scheduler preview UI scaffolded",
+      "detail": "Phase 2 generate→preview→edit→approve flow — preview screen built, not yet wired to scheduler engine.",
+      "status": "prog",
+      "durationMin": 140,
+      "ts": "2026-05-24T16:00:00",
+      "progressAfter": 44
+    },
+    {
+      "id": 5,
+      "project": "bloghead",
+      "title": "Stream Chat migration spike",
+      "detail": "Evaluated swapping Supabase Realtime → Stream Chat for typing indicators + presence. Est. 4–6h, only chat tables move. Parked.",
+      "status": "prog",
+      "durationMin": 110,
+      "ts": "2026-05-24T11:30:00",
+      "progressAfter": 89
+    },
+    {
+      "id": 6,
+      "project": "wozivoice",
+      "title": "Vapi EU data residency / DPA request sent",
+      "detail": "Formal request raised for EU residency + DPA. Waiting on Vapi. Blocks AVV paperwork chain.",
+      "status": "block",
+      "durationMin": 40,
+      "ts": "2026-05-23T15:45:00",
+      "progressAfter": 31
+    },
+    {
+      "id": 7,
+      "project": "thebarapp",
+      "title": "Fixed KOLLI unit conversion bug",
+      "detail": "1 Kiste was counting as 1 unit instead of 24 bottles — corrected in inventory parser. Re-run still gated on missing supplier invoices.",
+      "status": "done",
+      "durationMin": 75,
+      "ts": "2026-05-22T13:15:00",
+      "progressAfter": 41
+    },
+    {
+      "id": 8,
+      "project": "bloghead",
+      "title": "iOS booking flow — SwiftUI screens",
+      "detail": "Artist search + booking request screens built in Xcode against existing API. Auth + payment next.",
+      "status": "prog",
+      "durationMin": 220,
+      "ts": "2026-05-21T18:20:00",
+      "progressAfter": 86
+    }
+  ]
+}
