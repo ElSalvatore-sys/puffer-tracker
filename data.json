@@ -14,6 +14,12 @@
       "name": "Dehgo",
       "phase": "Cleaning up, getting ready to launch",
       "accent": "#a98bff"
+    },
+    "no1restaurant": {
+      "name": "No.1 Restaurant",
+      "phase": "Live — custom domain pending",
+      "accent": "#f59e0b",
+      "minor": true
     }
   },
   "log": [
@@ -486,6 +492,76 @@
       "durationMin": 120,
       "ts": "2026-05-27T20:00:00",
       "progressAfter": 96
+    },
+    {
+      "id": 51,
+      "project": "no1restaurant",
+      "title": "Restaurant brand applied to the template",
+      "detail": "Started from a web template and transformed it into Number One Restaurant: replaced all placeholder text with the real name, tagline ('Shawarma & Falafel. Wiesbaden-Mitte.'), and address throughout. Set the colour scheme to deep black with amber and gold accents to match the restaurant's look and feel. The browser tab title and page identity are now all correct.",
+      "status": "done",
+      "durationMin": 45,
+      "ts": "2026-05-27T09:00:00",
+      "progressAfter": 15
+    },
+    {
+      "id": 52,
+      "project": "no1restaurant",
+      "title": "Full menu, prices + real photos added",
+      "detail": "Built out the complete menu across 5 categories: Hähnchen-Shawarma (6 items), Fleisch-Shawarma (6 items including ½ kg and 1 kg sharing platters), Falafel & Mezze (9 items), the 3 signature hero dishes, and Drinks (5 items). Swapped in the restaurant's real food photography. Updated the phone number, opening hours (Mon–Thu + Sun until 23:00, Fri–Sat until midnight), and the Google rating (4.8★, 81 reviews).",
+      "status": "done",
+      "durationMin": 35,
+      "ts": "2026-05-27T09:45:00",
+      "progressAfter": 30
+    },
+    {
+      "id": 53,
+      "project": "no1restaurant",
+      "title": "Legal audit done — 5 GDPR problems found",
+      "detail": "Before going live, ran a full scan of the site for legal and privacy issues. Found five things that had to be fixed: Google Maps was loading automatically and sending visitor data to Google without consent (a GDPR violation); the Impressum was missing (required by German law §5 DDG); the privacy policy was missing; the contact email was still a placeholder; and the owner name and tax number fields were blank.",
+      "status": "done",
+      "durationMin": 35,
+      "ts": "2026-05-27T10:20:00",
+      "progressAfter": 45
+    },
+    {
+      "id": 54,
+      "project": "no1restaurant",
+      "title": "Impressum, privacy policy + GDPR fixes done",
+      "detail": "Added the Impressum (the legal disclosure page German law requires for any business website) and a full GDPR-compliant privacy policy. Fixed Google Maps so it only loads when the customer actively clicks 'KARTE LADEN' — Google never connects automatically. Updated the contact email (n1rw@wiesbaden.de) across every part of the site. Both legal documents open cleanly from the footer. Site is now legal to publish.",
+      "status": "done",
+      "durationMin": 45,
+      "ts": "2026-05-27T10:55:00",
+      "progressAfter": 65
+    },
+    {
+      "id": 55,
+      "project": "no1restaurant",
+      "title": "Site went live for the first time",
+      "detail": "Built the final production version and deployed it to Vercel. Number One Restaurant now has a live public website — number-one-restaurant.vercel.app — for the first time.",
+      "status": "done",
+      "durationMin": 10,
+      "ts": "2026-05-27T11:40:00",
+      "progressAfter": 70
+    },
+    {
+      "id": 56,
+      "project": "no1restaurant",
+      "title": "Fully mobile + smooth animations throughout",
+      "detail": "Full pass to make the site look professional on every screen size — the layout adapts from 3-column desktop down to single-column phone. Added: smooth entrance animations when the page loads; scroll-reveal for every section; staggered card pop-in; count-up numbers in the stats strip; a sticky frosted-glass navigation bar; a continuously scrolling amber info ticker; hover effects; and a pulsing 'jetzt offen' badge. All animations turn off automatically if the visitor's device has reduce-motion on.",
+      "status": "done",
+      "durationMin": 70,
+      "ts": "2026-05-27T11:50:00",
+      "progressAfter": 90
+    },
+    {
+      "id": 57,
+      "project": "no1restaurant",
+      "title": "German, English + Arabic (right-to-left) added",
+      "detail": "Added a language switcher (DE · EN · عر) — every piece of text on the site is now in all three languages: navigation, menu items, descriptions, opening hours, address, and footer. When Arabic is selected, the entire page flips to right-to-left layout including the navigation and hero. Arabic uses the device's built-in system font so no outside connection is made — GDPR stays intact. The legal pages (Impressum, Datenschutz) remain in German only, as required by law. Final production build deployed.",
+      "status": "done",
+      "durationMin": 34,
+      "ts": "2026-05-27T13:00:00",
+      "progressAfter": 100
     }
   ]
 }
