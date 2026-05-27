@@ -366,6 +366,56 @@
       "durationMin": 240,
       "ts": "2026-05-26T08:00:00",
       "progressAfter": 93
+    },
+    {
+      "id": 39,
+      "project": "dehgo",
+      "title": "Users can request or fully delete their data",
+      "detail": "Anyone using the app can now request a complete copy of their personal data, or delete their account entirely — with a 30-day window to change their mind before anything is gone for good. Deletion genuinely removes their information everywhere it lives across the system. This is a legal requirement under EU data-protection law (DSGVO) and was tested rigorously to make sure one person's deletion never accidentally touches anyone else's data.",
+      "status": "done",
+      "durationMin": 420,
+      "ts": "2026-05-26T14:00:00",
+      "progressAfter": 89
+    },
+    {
+      "id": 40,
+      "project": "dehgo",
+      "title": "Report, block + auto-moderation system built",
+      "detail": "Three layers of protection now in place: users can report or block each other; the system automatically flags suspicious chat messages (attempts to move deals off-platform, spam, scams) for review; and admins can ban bad actors — instantly removing their job posts, cancelling pending matches, and locking them out. A two-sided marketplace lives or dies on trust, and this keeps the platform clean.",
+      "status": "done",
+      "durationMin": 360,
+      "ts": "2026-05-26T18:00:00",
+      "progressAfter": 90
+    },
+    {
+      "id": 41,
+      "project": "dehgo",
+      "title": "Abuse limits + SMS cost protection added",
+      "detail": "Added limits that stop people from hammering the system: protection against password-guessing attacks, mass fake-account creation, and abuse of the text-message verification system — which costs real money per message sent. Without these, a single bad actor could run up a real bill or compromise accounts.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-05-26T21:00:00",
+      "progressAfter": 91
+    },
+    {
+      "id": 42,
+      "project": "dehgo",
+      "title": "Error monitoring + daily backups wired up",
+      "detail": "The app now automatically reports errors the moment they happen, tracks key activity (sign-ups, jobs posted, matches made), and backs itself up every day — with a tested recovery process so data can be restored if something ever goes wrong. Once live, we'll see problems immediately instead of hearing about them from frustrated users, and a server failure becomes an inconvenience, not a catastrophe.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-05-27T09:30:00",
+      "progressAfter": 92
+    },
+    {
+      "id": 43,
+      "project": "dehgo",
+      "title": "App visuals confirmed matching the design",
+      "detail": "Ran a full side-by-side check of every screen against the original design — this time with real data loaded, not placeholder content. The app now looks exactly like the professional product we designed, not a rough prototype. First impressions are everything in a consumer app; venues and workers judge credibility in seconds.",
+      "status": "done",
+      "durationMin": 180,
+      "ts": "2026-05-27T11:00:00",
+      "progressAfter": 93
     }
   ]
 }
