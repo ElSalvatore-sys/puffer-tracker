@@ -416,6 +416,16 @@
       "durationMin": 180,
       "ts": "2026-05-27T11:00:00",
       "progressAfter": 93
+    },
+    {
+      "id": 44,
+      "project": "thebarapp",
+      "title": "Mitarbeiter onboarding T1",
+      "detail": "Employee model +7 DATEV fields, StaffService actor stubs (6 endpoints), 4-tier chooser (Import/Scannen/Einladen stubs + Manuell fully built with Lohndaten amber section + IBAN eye-reveal)",
+      "status": "done",
+      "durationMin": 90,
+      "ts": "2026-05-27T11:12:40.267Z",
+      "progressAfter": 62
     }
   ]
 }
