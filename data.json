@@ -632,6 +632,16 @@
       "durationMin": 95,
       "ts": "2026-05-28T19:43:42.592Z",
       "progressAfter": 80
+    },
+    {
+      "id": 65,
+      "project": "thebarapp",
+      "title": "Scannen tier merged to main",
+      "detail": "Scannen onboarding tier landed: live SANDBOX verify (extract 200 + 12-key payload, in-app counter, save 201), found+fixed multipart field bug (file->image). Rebased onto T2 6647b3f, pushed feature/employee-import -> main (cf90a01). Test rows purged by T2. iOS-only so backend deploy is a no-op refresh.",
+      "status": "done",
+      "durationMin": 70,
+      "ts": "2026-05-28T22:06:01.358Z",
+      "progressAfter": 100
     }
   ]
 }
