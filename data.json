@@ -562,6 +562,66 @@
       "durationMin": 34,
       "ts": "2026-05-27T13:00:00",
       "progressAfter": 100
+    },
+    {
+      "id": 58,
+      "project": "thebarapp",
+      "title": "Data-handling contract with Hetzner signed",
+      "detail": "EU privacy law (GDPR) requires a signed contract with every company that stores your customers' data. We now have this contract (called an AVV) on file with Hetzner, our server provider. Hetzner is legally bound to follow EU privacy rules for the data stored on their servers in Falkenstein, Germany. Without this, we technically couldn't legally store customer or staff information on those servers.",
+      "status": "done",
+      "durationMin": 30,
+      "ts": "2026-05-28T09:00:00",
+      "progressAfter": 63
+    },
+    {
+      "id": 59,
+      "project": "thebarapp",
+      "title": "TÜV security audit filed; legal status confirmed",
+      "detail": "Filed a copy of Hetzner's latest independent security audit (carried out by TÜV Rheinland) — useful proof when a venue's accountant or a future investor asks whether our hosting is actually secure. Also clarified that since ThePuffer isn't yet a registered business, all contracts are correctly signed under Ali Hassan personally. Noted: register a Gewerbe at the Wiesbaden Gewerbeamt before invoicing a second venue or taking referral commissions.",
+      "status": "done",
+      "durationMin": 10,
+      "ts": "2026-05-28T09:30:00",
+      "progressAfter": 63
+    },
+    {
+      "id": 60,
+      "project": "thebarapp",
+      "title": "EU-only storage area created for staff documents",
+      "detail": "Set up a brand-new storage area at Cloudflare that is legally pinned to the European Union — data stored here can physically never leave EU borders. This is where all employment contracts, ID document scans, tax certificates, and other sensitive staff paperwork will now live. Kept separate from where we store things like product photos or app icons (those can sit anywhere).",
+      "status": "done",
+      "durationMin": 30,
+      "ts": "2026-05-28T09:45:00",
+      "progressAfter": 64
+    },
+    {
+      "id": 61,
+      "project": "thebarapp",
+      "title": "EU storage wired into the backend",
+      "detail": "Connected the new EU storage into the server's configuration so the app knows how to talk to it. There was a brief 90-second hiccup during the switchover — a temporary configuration drift that briefly hid some staff-onboarding code — caught and recovered without anyone noticing. Production stable; the lesson was documented so it won't happen again.",
+      "status": "done",
+      "durationMin": 30,
+      "ts": "2026-05-28T10:15:00",
+      "progressAfter": 65
+    },
+    {
+      "id": 62,
+      "project": "thebarapp",
+      "title": "Staff documents now automatically go to EU storage",
+      "detail": "Wrote, reviewed, and deployed the code change that makes every uploaded staff document (employment contract, ID scan, etc.) automatically land in the GDPR-protected EU storage. The system fails loudly if the EU storage is ever misconfigured — it will never silently fall back to a non-EU location by accident.",
+      "status": "done",
+      "durationMin": 30,
+      "ts": "2026-05-28T10:45:00",
+      "progressAfter": 66
+    },
+    {
+      "id": 63,
+      "project": "thebarapp",
+      "title": "Full pipeline tested on real production servers",
+      "detail": "Created a test staff member through the iOS app, uploaded a test document, and verified the whole chain: sensitive fields (IBAN, tax ID, social security number) are properly encrypted so even database admins can't read them; managers see masked values like DE89•••3000 not the raw IBAN; the document landed in EU storage, not the old one; and the delete function actually deletes everything, as EU privacy law requires. Test data was then cleanly purged. The full pipeline is now proven on real production traffic, not just in theory.",
+      "status": "done",
+      "durationMin": 15,
+      "ts": "2026-05-28T11:15:00",
+      "progressAfter": 67
     }
   ]
 }
