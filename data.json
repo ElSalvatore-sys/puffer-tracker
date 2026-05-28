@@ -622,6 +622,16 @@
       "durationMin": 15,
       "ts": "2026-05-28T11:15:00",
       "progressAfter": 67
+    },
+    {
+      "id": 64,
+      "project": "thebarapp",
+      "title": "Scannen tier wired + committed",
+      "detail": "Scannen onboarding tier (capture→compress→extract→reuse Import review row→createStaff), AVV/WOZI gate, German error map, Info.plist hardened (dropped TEMP file-sharing keys). Build green, 9-frame sim drive-through verified. Committed to feature/employee-import (74f16b3), merge handed to Ali. Counter@~30s + 201-save re-drive pending T2 live + owner JWT.",
+      "status": "prog",
+      "durationMin": 95,
+      "ts": "2026-05-28T19:43:42.592Z",
+      "progressAfter": 80
     }
   ]
 }
