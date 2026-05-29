@@ -762,6 +762,16 @@
       "durationMin": 30,
       "ts": "2026-05-29T22:30:00",
       "progressAfter": 80
+    },
+    {
+      "id": 78,
+      "project": "thebarapp",
+      "title": "Scannen accuracy blocked — daemon email validator",
+      "detail": "Live app-service retest (SANDBOX) on real DATEV Personalfragebogen via api.thebarapp.de: 1/12 fields clean. email field corrupted with raw transcription tail (...Stand 08/2012\"}) reproducible at both 1448x2048 and 2481x3509; page-2 502 at hi-res. env dump confirms relay -> :8044 GLM-OCR v0.4 (NOT Gemma :8043, NOT a deploy gap). Studio agent: v0.4 email-validator gap. iOS 2048 clamp verified correct/unified (no fix needed). PR #17 stays draft until daemon email-validator fix + retest passes.",
+      "status": "block",
+      "durationMin": 35,
+      "ts": "2026-05-29T23:46:12.921Z",
+      "progressAfter": 80
     }
   ]
 }
