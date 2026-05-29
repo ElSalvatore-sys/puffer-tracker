@@ -626,22 +626,72 @@
     {
       "id": 64,
       "project": "thebarapp",
-      "title": "Scannen tier wired + committed",
-      "detail": "Scannen onboarding tier (capture→compress→extract→reuse Import review row→createStaff), AVV/WOZI gate, German error map, Info.plist hardened (dropped TEMP file-sharing keys). Build green, 9-frame sim drive-through verified. Committed to feature/employee-import (74f16b3), merge handed to Ali. Counter@~30s + 201-save re-drive pending T2 live + owner JWT.",
-      "status": "prog",
+      "title": "Document scan flow built in the iOS app",
+      "detail": "Built the full Scannen (scan-to-hire) flow in the app: manager opens the camera or picks a photo, the app compresses it, sends it to the AI reader, shows a live 'reading...' countdown, and when the AI returns the results they land directly in the same editable review screen used by the Import tier. A real bug was caught during testing — the photo was being sent under the wrong label — found and fixed on the spot.",
+      "status": "done",
       "durationMin": 95,
-      "ts": "2026-05-28T19:43:42.592Z",
-      "progressAfter": 80
+      "ts": "2026-05-28T19:43:00",
+      "progressAfter": 73
     },
     {
       "id": 65,
       "project": "thebarapp",
-      "title": "Scannen tier merged to main",
-      "detail": "Scannen onboarding tier landed: live SANDBOX verify (extract 200 + 12-key payload, in-app counter, save 201), found+fixed multipart field bug (file->image). Rebased onto T2 6647b3f, pushed feature/employee-import -> main (cf90a01). Test rows purged by T2. iOS-only so backend deploy is a no-op refresh.",
+      "title": "Full scan-to-hire verified on the test venue",
+      "detail": "Ran the complete end-to-end journey on the SANDBOX test venue: photograph a payroll document → AI reads it → 12 fields extracted → manager reviews and saves → staff member created. Verified that sensitive fields (IBAN, tax ID) are masked in the manager view and that the document image is never stored anywhere. Test data was then cleanly purged from the system.",
       "status": "done",
       "durationMin": 70,
-      "ts": "2026-05-28T22:06:01.358Z",
-      "progressAfter": 100
+      "ts": "2026-05-28T22:06:00",
+      "progressAfter": 75
+    },
+    {
+      "id": 66,
+      "project": "thebarapp",
+      "title": "14 staff roles now work correctly",
+      "detail": "The database was silently rejecting common hospitality job titles — bartender, cook, server, host, busser, barback, security — even though the app offered them. All 14 roles (including manager and shift lead) are now accepted, with German error messages when something goes wrong and proper permission levels so a bartender can't access manager-only features.",
+      "status": "done",
+      "durationMin": 90,
+      "ts": "2026-05-28T12:00:00",
+      "progressAfter": 69
+    },
+    {
+      "id": 67,
+      "project": "thebarapp",
+      "title": "Staff import screen redesigned",
+      "detail": "The Import screen (where managers paste a list of staff from a spreadsheet) was rebuilt from scratch: each person now has their own roomy editable card instead of a dense row. Managers can select multiple people at once and change a setting for all of them in one go (e.g. 'set contract type for everyone'), edit any field inline, and sensitive details like IBAN show a locked symbol with a tap-to-reveal sheet. Live validation flags mistakes as you type.",
+      "status": "done",
+      "durationMin": 120,
+      "ts": "2026-05-28T14:00:00",
+      "progressAfter": 71
+    },
+    {
+      "id": 68,
+      "project": "thebarapp",
+      "title": "AI document reader set up on Mac Studio",
+      "detail": "Set up a local AI model (Gemma 4, running on the Mac Studio at home) that can read German payroll documents and extract the key fields — Steuer-ID, IBAN, social security number, name, address — as structured data. It's only accessible inside our private network (not the internet), so document images never leave our hands. Tested against a synthetic payroll form: all 12 fields extracted correctly, including exact IBAN and Steuer-ID digits.",
+      "status": "done",
+      "durationMin": 120,
+      "ts": "2026-05-28T17:00:00",
+      "progressAfter": 72
+    },
+    {
+      "id": 69,
+      "project": "thebarapp",
+      "title": "Privacy assessment written for document scanning",
+      "detail": "Wrote the formal privacy impact assessment (DPIA) required by EU law before we can scan real ID documents and payroll forms. It covers what data is processed, why, the risks, and the protections in place. Key finding: because the AI runs on our own Mac Studio rather than a cloud service, no ID document data ever leaves our control — which makes the compliance picture significantly simpler. Document is bilingual (German primary for the privacy authority, English working draft), ready for DPO sign-off.",
+      "status": "done",
+      "durationMin": 60,
+      "ts": "2026-05-29T09:00:00",
+      "progressAfter": 76
+    },
+    {
+      "id": 70,
+      "project": "thebarapp",
+      "title": "Real-photo test done; faster AI model being evaluated",
+      "detail": "Tested the scanner with a real phone-camera photo of a document (not the clean digital test used earlier). Found that the larger AI model takes longer than the timeout allows on real, imperfect photos — not because of image size, but because of the model's processing time. A smaller, faster model (about 5× quicker) is being evaluated as the solution. Download in progress; results expected shortly.",
+      "status": "prog",
+      "durationMin": 60,
+      "ts": "2026-05-29T10:30:00",
+      "progressAfter": 76
     }
   ]
 }
