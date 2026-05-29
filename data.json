@@ -692,6 +692,76 @@
       "durationMin": 60,
       "ts": "2026-05-29T10:30:00",
       "progressAfter": 76
+    },
+    {
+      "id": 71,
+      "project": "thebarapp",
+      "title": "Faster document reader is live — under 6 seconds a photo",
+      "detail": "Yesterday's open question is resolved: the smaller, quicker AI reader is now running and reading real phone-camera photos of forms in under 6 seconds each — roughly 5 to 50 times faster than before, depending on how dense the form is. Real, imperfect photos no longer time out the way the larger model did.",
+      "status": "done",
+      "durationMin": 90,
+      "ts": "2026-05-29T13:00:00",
+      "progressAfter": 77
+    },
+    {
+      "id": 72,
+      "project": "thebarapp",
+      "title": "Onboard up to 30 new staff from photos in one sitting",
+      "detail": "Patrick can now hire new staff by photographing their filled-in employment forms with his phone — up to 30 forms in a single session. The app reads each one, fills in the database fields, and shows everything in a review screen where he can check and correct before the staff records are created. For Wohnzimmer's pace (a handful of new hires a quarter) this turns half a day of typing into about a 15-minute session.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-05-29T15:30:00",
+      "progressAfter": 78
+    },
+    {
+      "id": 73,
+      "project": "thebarapp",
+      "title": "Which forms read cleanly — and which still need typing",
+      "detail": "Honest status on form coverage: the common BDA, AOK and simple staff questionnaires read at 80–100% accuracy — names, dates of birth, tax IDs, phone numbers and emails come out reliably. The dense DATEV payroll form is the exception: names and tax IDs read fine, but Tax Class, Religion and Health Insurance don't reliably extract from its tight multi-column layout, so those are still filled in by hand. Hand-written forms aren't tested yet. Where the reader is unsure it writes 'empty' rather than guessing — a wrong value never slips in silently.",
+      "status": "prog",
+      "durationMin": 60,
+      "ts": "2026-05-29T17:00:00",
+      "progressAfter": 78
+    },
+    {
+      "id": 74,
+      "project": "thebarapp",
+      "title": "Scanner now survives the Mac sleeping or restarting",
+      "detail": "The AI reader running on the in-office Mac used to quietly stop working after the machine went to sleep. It's now supervised — it restarts itself automatically after reboots and idle periods, and a second machine stands by as backup if the main one ever fails. No more silent outages.",
+      "status": "done",
+      "durationMin": 45,
+      "ts": "2026-05-29T18:30:00",
+      "progressAfter": 79
+    },
+    {
+      "id": 75,
+      "project": "thebarapp",
+      "title": "Confidently-wrong bank & tax numbers made impossible",
+      "detail": "Added a safety check that runs on every read: an IBAN or tax ID that doesn't pass its proper format check can no longer be saved as if it were correct — it's flagged as empty for the manager to fill in instead. This makes the worst kind of error — a wrong-but-plausible bank number that looks right — structurally impossible. Sensitive fields stay encrypted on the device and masked until tapped to reveal.",
+      "status": "done",
+      "durationMin": 75,
+      "ts": "2026-05-29T20:00:00",
+      "progressAfter": 79
+    },
+    {
+      "id": 76,
+      "project": "thebarapp",
+      "title": "Privacy & compliance re-checked before go-live",
+      "detail": "Walked the AVV-GDPR onboarding checklist again at each stage of the new flow — no regressions, and because the whole pipeline stays on hardware we control in the office, no ID-document data is ever sent to a third party. One genuine backend improvement was spotted and written up with the exact fix, queued for the second-venue rollout (current users aren't affected). The privacy assessment (DPIA) just needs a small model-name update before any external review.",
+      "status": "done",
+      "durationMin": 75,
+      "ts": "2026-05-29T21:30:00",
+      "progressAfter": 80
+    },
+    {
+      "id": 77,
+      "project": "thebarapp",
+      "title": "Checking one bank-number mismatch from testing",
+      "detail": "During late-night testing one IBAN came back not matching what was on the form. Looking into whether it's just a display quirk in the review screen or a real reading/validation issue before this goes in front of staff. Also a small follow-up to test against the AOK form. Headline for the day: photo-based staff onboarding is working in the test venue — Patrick can use it Monday, and multi-venue rollout becomes a real conversation.",
+      "status": "prog",
+      "durationMin": 30,
+      "ts": "2026-05-29T22:30:00",
+      "progressAfter": 80
     }
   ]
 }
