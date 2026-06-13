@@ -135,13 +135,116 @@
   .mini-fill{height:100%;width:0;border-radius:99px;background:var(--c);transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
   .mini-foot{display:flex;gap:16px}
 
+  /* ── This-week highlights banner ── */
+  .hl{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:30px;
+    background:linear-gradient(120deg,rgba(255,157,92,.08),rgba(169,139,255,.08) 50%,rgba(57,215,176,.08))}
+  .hl-eyebrow{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-2);margin-bottom:11px;display:flex;align-items:center;gap:9px}
+  .hl-eyebrow .spark{color:var(--prog);font-size:13px}
+  .hl-rot{position:relative;min-height:2.95em}
+  .hl-text{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(15px,2.3vw,20px);line-height:1.4;letter-spacing:-.01em;max-width:84ch;
+    position:absolute;inset:0;opacity:0;transform:translateY(7px);transition:opacity .55s ease,transform .55s ease;pointer-events:none}
+  .hl-text.on{position:relative;opacity:1;transform:none;pointer-events:auto}
+  .hl-dots{display:flex;gap:6px;margin-top:13px}
+  .hl-dot{width:6px;height:6px;border-radius:50%;background:var(--line);transition:background .35s,width .35s;cursor:pointer}
+  .hl-dot.on{background:var(--muted);width:18px;border-radius:3px}
+  .hl-stats{display:flex;gap:28px;margin-top:16px;flex-wrap:wrap}
+  .hl-stat{display:flex;align-items:baseline;gap:7px}
+  .hl-stat b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em}
+  .hl-stat span{font-size:12px;color:var(--muted)}
+
+  /* ── Milestone roadmap strip (inside cards) ── */
+  .rm{margin-top:18px;display:flex;align-items:flex-start}
+  .rm-step{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;position:relative;min-width:0}
+  .rm-step::before{content:"";position:absolute;top:5px;right:50%;width:100%;height:2px;background:var(--line)}
+  .rm-step:first-child::before{display:none}
+  .rm-step.done::before{background:var(--c)}
+  .rm-step.current::before{background:linear-gradient(90deg,var(--c),var(--line))}
+  .rm-dot{width:12px;height:12px;border-radius:50%;background:#0d0f14;border:2px solid var(--line);z-index:1}
+  .rm-step.done .rm-dot{background:var(--c);border-color:var(--c)}
+  .rm-step.current .rm-dot{background:var(--c);border-color:var(--c);box-shadow:0 0 0 4px rgba(255,255,255,.07)}
+  .rm-label{font-size:9.5px;line-height:1.25;text-align:center;color:var(--muted-2);max-width:78px}
+  .rm-step.done .rm-label{color:var(--muted)}
+  .rm-step.current .rm-label{color:var(--text);font-weight:600}
+
+  /* ── Section headers (shared) ── */
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:5px}
+  .sec-head h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:23px;letter-spacing:-.01em}
+  .sec-sub{color:var(--muted);font-size:13px;margin-bottom:20px;max-width:64ch}
+
+  /* ── Goals / The plan ── */
+  .goals{margin-bottom:40px}
+  .goal-row{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+  .goal-row .glow{position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:var(--c);filter:blur(56px);opacity:.14}
+  .goal-top{display:flex;align-items:center;gap:11px;margin-bottom:14px;position:relative}
+  .goal-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em}
+  .goal-tag{font-size:10.5px;font-weight:700;padding:4px 11px;border-radius:999px;border:1px solid;white-space:nowrap}
+  .ladder{display:flex;align-items:center;gap:7px;flex-wrap:wrap;position:relative}
+  .lad{font-size:12px;padding:6px 12px;border-radius:999px;white-space:nowrap;border:1px solid var(--line);color:var(--muted-2)}
+  .lad.next{color:var(--text);border-color:var(--muted-2)}
+  .lad-arrow{color:var(--muted-2);font-size:11px}
+  .goal-side{display:flex;gap:8px;align-items:center;margin-top:13px;flex-wrap:wrap;position:relative}
+  .goal-side .lbl{font-size:10px;color:var(--muted-2);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.12em}
+  .chip{font-size:11px;padding:4px 10px;border-radius:8px;background:var(--panel);border:1px dashed var(--line);color:var(--muted)}
+
+  /* ── What's next ── */
+  .next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:40px}
+  .next-card{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:14px;padding:16px 18px}
+  .next-card .nn{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .next-card .nn .dot{width:8px;height:8px;border-radius:50%;background:var(--c)}
+  .next-list{display:flex;flex-direction:column;gap:9px}
+  .next-item{display:flex;gap:9px;font-size:13px;color:var(--muted);align-items:flex-start;line-height:1.45}
+  .next-item .arrow{color:var(--c);font-weight:700;flex-shrink:0}
+  .next-item.is-now{color:var(--text);font-weight:500}
+
+  /* ── Gallery ── */
+  .gallery{margin-bottom:40px}
+  .gal-proj{margin-bottom:22px}
+  .gal-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .gal-name .dot{width:8px;height:8px;border-radius:50%;background:var(--c)}
+  .gal-row{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px}
+  .gal-shot{width:150px;height:300px;border-radius:14px;border:1px solid var(--line);object-fit:cover;flex-shrink:0;background:var(--panel)}
+  .gal-cap{font-size:11px;color:var(--muted-2);margin-top:6px;text-align:center;max-width:150px}
+  .gal-empty{display:flex;align-items:center;justify-content:center;text-align:center;min-height:84px;border:1px dashed var(--line);border-radius:14px;color:var(--muted-2);font-size:13px;padding:18px}
+
+  /* ── Clickable cards + drill-down ── */
+  .tap-hint{font-size:13px;color:var(--muted);margin-bottom:16px}
+  .card.clickable,.mini-card.clickable{cursor:pointer}
+  .card.clickable:focus-visible,.mini-card.clickable:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+  .card-cta{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:5px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);transition:color .2s,gap .2s}
+  .card:hover .card-cta{color:var(--c);gap:9px}
+  .card-cta .arr{font-size:13px}
+
+  .backlink{background:var(--panel);border:1px solid var(--line);color:var(--muted);font-family:'Sora',sans-serif;font-size:13px;padding:8px 14px;border-radius:999px;cursor:pointer;margin-bottom:22px;transition:all .18s}
+  .backlink:hover{color:var(--text);border-color:var(--muted-2);transform:translateX(-2px)}
+
+  .pv-hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:30px}
+  .pv-hero .glow{position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:var(--c);filter:blur(64px);opacity:.18}
+  .pv-hero .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px;position:relative}
+  .pv-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;letter-spacing:-.02em;line-height:1}
+  .pv-hero .pphase{margin-top:5px}
+  .pv-sec{margin-bottom:36px}
+  .sec-sub.note{font-style:italic;color:var(--muted-2)}
+
+  .chapters{position:relative;padding-left:26px}
+  .chapters::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--c),transparent)}
+  .ch{position:relative;margin-bottom:20px}
+  .ch::before{content:"";position:absolute;left:-23px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--c);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--c)}
+  .ch-when{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:4px}
+  .ch-title{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;letter-spacing:-.01em;margin-bottom:5px}
+  .ch-what{font-size:13.5px;color:var(--muted);line-height:1.6;max-width:72ch}
+  .ch-why{font-size:13px;color:var(--muted-2);line-height:1.6;margin-top:6px;max-width:72ch}
+  .ch-why b{color:var(--text);font-weight:600}
+
   @media(max-width:860px){
     .strip{grid-template-columns:repeat(2,1fr)}
     .cards{grid-template-columns:1fr}
     .mini-cards{grid-template-columns:1fr}
+    .next-grid{grid-template-columns:1fr}
     .meta{text-align:left;align-items:flex-start}
     header{align-items:flex-start}
     .legend{gap:12px}
+    .rm-label{font-size:9px}
+    .pv-name{font-size:25px}
   }
 </style>
 </head>
@@ -160,22 +263,28 @@
     </div>
   </header>
 
-  <section class="strip" id="strip"></section>
-  <section class="cards" id="cards"></section>
+  <div id="overview">
+    <section class="strip" id="strip"></section>
+    <section id="highlight"></section>
 
-  <section id="mini-section"></section>
+    <p class="tap-hint reveal" style="animation-delay:120ms">Tap any project to see its full story — the plan, what's next, screens and everything we've built.</p>
+    <section class="cards" id="cards"></section>
+    <section id="mini-section"></section>
 
-  <div class="legend reveal" style="animation-delay:400ms">
-    <span class="legend-item"><span class="legend-dot" style="background:var(--done)"></span>Going well — latest step finished cleanly</span>
-    <span class="legend-item"><span class="legend-dot" style="background:var(--prog)"></span>In progress — something is actively being worked on</span>
-    <span class="legend-item"><span class="legend-dot" style="background:var(--block)"></span>Waiting — blocked on something outside our control</span>
+    <div class="legend reveal" style="animation-delay:400ms">
+      <span class="legend-item"><span class="legend-dot" style="background:var(--done)"></span>Going well — latest step finished cleanly</span>
+      <span class="legend-item"><span class="legend-dot" style="background:var(--prog)"></span>In progress — something is actively being worked on</span>
+      <span class="legend-item"><span class="legend-dot" style="background:var(--block)"></span>Waiting — blocked on something outside our control</span>
+    </div>
+
+    <div class="feedhead">
+      <h2>What's been happening</h2>
+      <div class="filters" id="filters"></div>
+    </div>
+    <section class="feed" id="feed"></section>
   </div>
 
-  <div class="feedhead">
-    <h2>What's been happening</h2>
-    <div class="filters" id="filters"></div>
-  </div>
-  <section class="feed" id="feed"></section>
+  <div id="projectview" hidden></div>
 
   <footer>
     This page updates automatically whenever a step is logged — usually within 15 seconds of it being finished. Refresh anytime to see the latest.
@@ -184,11 +293,18 @@
 
 <script>
 const FALLBACK = {
+  weekHighlight:{ range:"8–13 June", headlines:[
+    "Bloghead's booking flow now runs end-to-end for the first time — request, to confirmed, to invoice, automatically.",
+    "Bloghead is running on a real iPhone, pointed at the live server — animated intro, login and real photos all working.",
+    "Sign in with Google and Apple are both proven on the live server — Apple for the very first time.",
+    "The discovery feed is live: 12 real upcoming events across Wiesbaden, Mainz and Frankfurt.",
+    "Next up for Bloghead: wiring Stripe so artists actually get paid."
+  ] },
   projects: {
-    thebarapp:     { name:"TheBarApp",       phase:"Making Das Wohnzimmer smarter",       accent:"#ff9d5c" },
-    bloghead:      { name:"Bloghead",        phase:"Web done — building iPhone app",       accent:"#39d7b0" },
-    dehgo:         { name:"Dehgo",           phase:"Cleaning up, getting ready to launch", accent:"#a98bff" },
-    no1restaurant: { name:"No.1 Restaurant", phase:"Live — custom domain pending",         accent:"#f59e0b", minor:true }
+    thebarapp:     { name:"TheBarApp",       phase:"Making Das Wohnzimmer smarter",       accent:"#ff9d5c", gallery:[] },
+    bloghead:      { name:"Bloghead",        phase:"Web done — building iPhone app",       accent:"#39d7b0", gallery:[], side:["Marketing & growth","Legal sign-off (DSGVO)"], roadmap:[{label:"Web app",status:"done"},{label:"iPhone app",status:"done"},{label:"Payments live",status:"current"},{label:"First TestFlight",status:"next"},{label:"50–100 testers",status:"later"},{label:"Public launch",status:"later"}] },
+    dehgo:         { name:"Dehgo",           phase:"Cleaning up, getting ready to launch", accent:"#a98bff", gallery:[] },
+    no1restaurant: { name:"No.1 Restaurant", phase:"Live — custom domain pending",         accent:"#f59e0b", minor:true, gallery:[] }
   },
   log: [
     { id:1,  project:"thebarapp", title:"Morning briefing shows real numbers",    detail:"The morning briefing inside the app now shows actual forecast numbers — like '€1,850 expected tonight' — instead of placeholder text. It's pulling live data.", status:"done", durationMin:185, ts:"2026-05-26T09:40:00", progressAfter:57 },
@@ -256,7 +372,7 @@ function renderCards(){
     const s=computeProject(key);
     const stClass = s.status==='done'?'done':s.status==='block'?'block':'prog';
     const stTxt = s.status==='done'?'Going well':s.status==='block'?'Waiting on something':'In progress';
-    return `<div class="card reveal" style="--c:${p.accent};animation-delay:${i*90+120}ms">
+    return `<div class="card clickable reveal" style="--c:${p.accent};animation-delay:${i*90+120}ms" role="button" tabindex="0" onclick="openProject('${key}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProject('${key}')}">
       <div class="glow"></div>
       <div class="top">
         <div><div class="pname">${p.name}</div><div class="pphase">${p.phase}</div></div>
@@ -264,15 +380,176 @@ function renderCards(){
       </div>
       <div class="pct"><span class="big">${s.pct}%</span><span class="lbl">done</span></div>
       <div class="track"><div class="fill" data-w="${s.pct}"></div></div>
+      ${roadmapStrip(p)}
       <div class="cardfoot">
         <div class="cf"><span class="n">${s.hours.toFixed(1)}h</span><span class="t">worked</span></div>
         <div class="cf"><span class="n">${s.steps}</span><span class="t">steps logged</span></div>
+        <span class="card-cta">Open <span class="arr">→</span></span>
       </div>
     </div>`;
   }).join('');
   document.getElementById('cards').innerHTML=html;
   requestAnimationFrame(()=>document.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w+'%'));
 }
+
+function roadmapStrip(p){
+  if(!p.roadmap||!p.roadmap.length) return '';
+  return `<div class="rm">`+p.roadmap.map(s=>{
+    const cls=s.status==='done'?'done':s.status==='current'?'current':'';
+    return `<div class="rm-step ${cls}"><span class="rm-dot"></span><span class="rm-label">${s.label}</span></div>`;
+  }).join('')+`</div>`;
+}
+
+let hlTimer=null;
+function renderHighlight(){
+  const el=document.getElementById('highlight'); if(!el) return;
+  const h=DATA.weekHighlight; if(!h){ el.innerHTML=''; return; }
+  const lines = (Array.isArray(h.headlines)&&h.headlines.length) ? h.headlines : (h.headline?[h.headline]:[]);
+  if(!lines.length){ el.innerHTML=''; return; }
+  const weekAgo=Date.now()-7*86400*1000;
+  const wk=DATA.log.filter(l=>new Date(l.ts)>=weekAgo);
+  const moved=new Set(wk.map(l=>l.project)).size;
+  const multi=lines.length>1;
+  const dots = multi ? `<div class="hl-dots">${lines.map((_,i)=>`<span class="hl-dot${i===0?' on':''}" data-i="${i}"></span>`).join('')}</div>` : '';
+  el.innerHTML=`<div class="hl reveal" style="animation-delay:80ms">
+    <div class="hl-eyebrow"><span class="spark">✦</span>This week · ${h.range}</div>
+    <div class="hl-rot">${lines.map((t,i)=>`<div class="hl-text${i===0?' on':''}" data-i="${i}">${t}</div>`).join('')}</div>
+    ${dots}
+    <div class="hl-stats">
+      <div class="hl-stat"><b>${wk.length}</b><span>steps shipped</span></div>
+      <div class="hl-stat"><b>${moved}</b><span>project${moved!==1?'s':''} moved</span></div>
+    </div>
+  </div>`;
+  if(hlTimer){ clearInterval(hlTimer); hlTimer=null; }
+  if(!multi) return;
+  const texts=[...el.querySelectorAll('.hl-text')];
+  const dotEls=[...el.querySelectorAll('.hl-dot')];
+  let cur=0;
+  const show=n=>{
+    texts[cur].classList.remove('on'); dotEls[cur]?.classList.remove('on');
+    cur=(n+texts.length)%texts.length;
+    texts[cur].classList.add('on'); dotEls[cur]?.classList.add('on');
+  };
+  const HOLD=5200; // long enough to read, then advance
+  const start=()=>{ if(hlTimer) clearInterval(hlTimer); hlTimer=setInterval(()=>show(cur+1), HOLD); };
+  dotEls.forEach((d,i)=>d.addEventListener('click',()=>{ show(i); start(); }));
+  start();
+}
+
+/* ───── Per-project detail view ("everything we have" for one project) ───── */
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function planBlock(p){
+  const acc=p.accent;
+  if(!p.roadmap||!p.roadmap.length)
+    return `<section class="pv-sec"><div class="sec-head"><h2>The plan</h2></div><p class="sec-sub note">The roadmap for ${esc(p.name)} is being put together.</p></section>`;
+  const cur=p.roadmap.find(s=>s.status==='current');
+  const ladder=p.roadmap.map((s,j)=>{
+    const last=j===p.roadmap.length-1;
+    let style='', mark='';
+    if(s.status==='done'){ style=`color:${acc};border-color:${acc}55;background:${acc}14`; mark='✓ '; }
+    else if(s.status==='current'){ style=`color:var(--bg);background:${acc};border-color:${acc};font-weight:700`; mark='● '; }
+    const cls=s.status==='next'?'lad next':'lad';
+    const arrow=last?'':`<span class="lad-arrow">→</span>`;
+    return `<span class="${cls}" style="${style}">${mark}${esc(s.label)}</span>${arrow}`;
+  }).join('');
+  const side=(p.side&&p.side.length)
+    ? `<div class="goal-side"><span class="lbl">On the side</span>${p.side.map(s=>`<span class="chip">${esc(s)}</span>`).join('')}</div>` : '';
+  const tag=cur?`<span class="goal-tag" style="color:${acc};border-color:${acc}55;background:${acc}14">Now: ${esc(cur.label)}</span>`:'';
+  return `<section class="pv-sec"><div class="sec-head"><h2>The plan</h2>${tag}</div>
+    <div class="ladder">${ladder}</div>${side}</section>`;
+}
+
+function nextBlock(p){
+  if(!p.roadmap||!p.roadmap.length) return '';
+  const idx=p.roadmap.findIndex(s=>s.status==='current');
+  let picks = idx>=0 ? p.roadmap.slice(idx, idx+3) : p.roadmap.filter(s=>s.status!=='done').slice(0,3);
+  if(!picks.length) picks=[{label:'Launch 🎉'}];
+  const items=picks.map((s,j)=>`<div class="next-item${idx>=0&&j===0?' is-now':''}"><span class="arrow" style="color:${p.accent}">→</span><span>${esc(s.label)}</span></div>`).join('');
+  return `<section class="pv-sec"><div class="sec-head"><h2>What's next</h2></div><p class="sec-sub">${idx>=0?"The first one is being worked on right now.":"The immediate next steps."}</p><div class="next-list">${items}</div></section>`;
+}
+
+function galleryBlock(p){
+  const shots=p.gallery||[];
+  const body=shots.length
+    ? `<div class="gal-row">`+shots.map(s=>`<div><img class="gal-shot" src="${s.src}" alt="${esc(s.caption||p.name)}" loading="lazy">${s.caption?`<div class="gal-cap">${esc(s.caption)}</div>`:''}</div>`).join('')+`</div>`
+    : `<div class="gal-empty">📸 Screens for ${esc(p.name)} will appear here — captured automatically.</div>`;
+  return `<section class="pv-sec"><div class="sec-head"><h2>See it</h2></div><p class="sec-sub">Real screens from ${esc(p.name)}.</p>${body}</section>`;
+}
+
+function auditBlock(p){
+  const a=p.audit;
+  if(!a) return `<section class="pv-sec"><div class="sec-head"><h2>The full story</h2></div><p class="sec-sub note">A plain-language audit of everything built — and why — is being prepared for ${esc(p.name)}.</p></section>`;
+  const chapters=(a.chapters||[]).map(c=>`<div class="ch">
+      <div class="ch-when">${esc(c.when||'')}</div>
+      <div class="ch-body"><div class="ch-title">${esc(c.title)}</div>
+      <div class="ch-what">${esc(c.what)}</div>
+      ${c.why?`<div class="ch-why"><b>Why it mattered:</b> ${esc(c.why)}</div>`:''}</div>
+    </div>`).join('');
+  const hrs=a.hoursReal?`<span class="goal-tag" style="color:${p.accent};border-color:${p.accent}55;background:${p.accent}14">~${esc(a.hoursReal)}h all-in</span>`:'';
+  return `<section class="pv-sec"><div class="sec-head"><h2>The full story</h2>${hrs}</div>
+    ${a.summary?`<p class="sec-sub">${esc(a.summary)}</p>`:''}
+    <div class="chapters" style="--c:${p.accent}">${chapters}</div></section>`;
+}
+
+function historyBlock(key){
+  const p=DATA.projects[key]; const acc=p.accent;
+  const items=DATA.log.filter(l=>l.project===key).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
+  if(!items.length) return '';
+  const rows=items.map((l,i)=>{
+    const stClass=l.status==='done'?'done':l.status==='block'?'block':'prog';
+    const stTxt=l.status==='done'?'Completed':l.status==='block'?'Waiting on something':'In progress';
+    return `<div class="entry ${stClass}" style="--c:${acc}">
+      <div class="erow">
+        <div><div class="etitle">${esc(l.title)}</div><div class="edetail">${esc(l.detail||'')}</div></div>
+        <div class="ements"><span class="dur">⏱ ${fmtH(l.durationMin)}</span><span class="estatus ${stClass}">${stTxt}</span><span class="ts">${timeAgo(l.ts)}</span></div>
+      </div></div>`;
+  }).join('');
+  return `<section class="pv-sec"><div class="sec-head"><h2>Everything we've done</h2></div><p class="sec-sub">${items.length} steps, newest first.</p><div class="feed">${rows}</div></section>`;
+}
+
+function renderProjectView(key){
+  const p=DATA.projects[key]; if(!p) return;
+  const s=computeProject(key); const acc=p.accent;
+  const stClass=s.status==='done'?'done':s.status==='block'?'block':'prog';
+  const stTxt=s.status==='done'?'Going well':s.status==='block'?'Waiting on something':'In progress';
+  const real=(p.audit&&p.audit.hoursReal)?`<div class="cf"><span class="n">~${esc(p.audit.hoursReal)}h</span><span class="t">all-in</span></div>`:'';
+  const el=document.getElementById('projectview');
+  el.innerHTML=`
+    <button class="backlink" onclick="showOverview()">← All projects</button>
+    <div class="pv-hero reveal" style="--c:${acc}">
+      <div class="glow"></div>
+      <div class="top"><div><div class="pv-name">${esc(p.name)}</div><div class="pphase">${esc(p.phase)}</div></div><span class="pill ${stClass}">${stTxt}</span></div>
+      <div class="pct"><span class="big" style="color:${acc}">${s.pct}%</span><span class="lbl">done</span></div>
+      <div class="track"><div class="fill" data-w="${s.pct}" style="background:${acc}"></div></div>
+      <div class="cardfoot">
+        <div class="cf"><span class="n">${s.hours.toFixed(1)}h</span><span class="t">logged</span></div>
+        <div class="cf"><span class="n">${s.steps}</span><span class="t">steps</span></div>
+        ${real}
+      </div>
+    </div>
+    ${planBlock(p)}
+    ${nextBlock(p)}
+    ${galleryBlock(p)}
+    ${auditBlock(p)}
+    ${historyBlock(key)}`;
+  requestAnimationFrame(()=>el.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w+'%'));
+}
+
+/* ───── Router (hash-based, deep-linkable: #/p/bloghead) ───── */
+function openProject(key){ location.hash='#/p/'+key; }
+function showOverview(){ if(location.hash){ location.hash=''; } else route(); }
+function route(){
+  const m=(location.hash||'').match(/^#\/p\/(.+)$/);
+  const ov=document.getElementById('overview'), pv=document.getElementById('projectview');
+  if(m && DATA.projects[decodeURIComponent(m[1])]){
+    ov.hidden=true; pv.hidden=false; renderProjectView(decodeURIComponent(m[1]));
+  } else {
+    pv.hidden=true; pv.innerHTML=''; ov.hidden=false;
+  }
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', route);
 
 function renderMiniCards(){
   const minors = Object.entries(DATA.projects).filter(([,p])=>p.minor);
@@ -282,7 +559,7 @@ function renderMiniCards(){
     const s=computeProject(key);
     const stClass = s.status==='done'?'done':s.status==='block'?'block':'prog';
     const stTxt = s.status==='done'?'Done':s.status==='block'?'Waiting':'In progress';
-    return `<div class="mini-card reveal" style="--c:${p.accent};animation-delay:${i*80+200}ms">
+    return `<div class="mini-card clickable reveal" style="--c:${p.accent};animation-delay:${i*80+200}ms" role="button" tabindex="0" onclick="openProject('${key}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProject('${key}')}">
       <div class="glow"></div>
       <div class="mini-top">
         <div><div class="mini-name">${p.name}</div><div class="mini-phase">${p.phase}</div></div>
@@ -348,7 +625,8 @@ function setUpdated(){
 
 (async function init(){
   DATA = await loadData();
-  renderStrip(); renderCards(); renderMiniCards(); renderFilters(); renderFeed(); setUpdated();
+  renderStrip(); renderHighlight(); renderCards(); renderMiniCards(); renderFilters(); renderFeed(); setUpdated();
+  route();
   tick(); setInterval(tick,1000);
 })();
 </script>

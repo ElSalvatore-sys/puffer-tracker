@@ -3,23 +3,116 @@
     "thebarapp": {
       "name": "TheBarApp",
       "phase": "Making Das Wohnzimmer smarter",
-      "accent": "#ff9d5c"
+      "accent": "#ff9d5c",
+      "gallery": []
     },
     "bloghead": {
       "name": "Bloghead",
       "phase": "Web done — building iPhone app",
-      "accent": "#39d7b0"
+      "accent": "#39d7b0",
+      "roadmap": [
+        {
+          "label": "Web app",
+          "status": "done"
+        },
+        {
+          "label": "iPhone app",
+          "status": "done"
+        },
+        {
+          "label": "Payments live",
+          "status": "current"
+        },
+        {
+          "label": "First TestFlight",
+          "status": "next"
+        },
+        {
+          "label": "50–100 testers",
+          "status": "later"
+        },
+        {
+          "label": "Public launch",
+          "status": "later"
+        }
+      ],
+      "side": [
+        "Marketing & growth",
+        "Legal sign-off (DSGVO)"
+      ],
+      "gallery": [],
+      "audit": {
+        "summary": "Bloghead started as a website, then moved onto the iPhone. Over the last weeks it crossed the line from 'looks finished' to 'actually works' — a booking now runs all the way through with a real invoice, the app runs on a real phone with real photos and real logins, and it backs itself up every night. The one big piece left before it's a real business is taking payments, which is being wired up now.",
+        "chapters": [
+          {
+            "when": "The start",
+            "title": "The website came first",
+            "what": "The web version was built and polished — artist profiles, search and booking — loading fast with top marks for speed, search-friendliness and accessibility.",
+            "why": "Prove the idea works and have something real on the web before committing to a full phone app."
+          },
+          {
+            "when": "Building the app",
+            "title": "Moving onto the iPhone",
+            "what": "The artist search, booking-request and profile screens were rebuilt natively for iPhone, all working against the live server.",
+            "why": "The phone is where artists, organizers and fans actually are — a website alone wasn't going to be enough."
+          },
+          {
+            "when": "12 June",
+            "title": "A booking finally completes, start to finish",
+            "what": "For the first time ever, a booking went all the way through — request, to confirmed, to done — and the invoice was created automatically. The thing that had blocked this for a long time turned out to be a hidden fault deep in the database; once found it was fixed and protected with a test so it can't quietly come back.",
+            "why": "A marketplace that can't finish a booking isn't a business. This unlocked the whole point of the app."
+          },
+          {
+            "when": "12 June",
+            "title": "Real photos instead of placeholders",
+            "what": "Swapped stock placeholder images for 60 real, made-for-us pictures of artists and venues.",
+            "why": "First impressions matter — and it also removed a legal risk that came with using people's photos without permission."
+          },
+          {
+            "when": "12 June",
+            "title": "In your hand for the first time",
+            "what": "The app was installed and opened on a real iPhone, connected to the live server — animated intro, login and real artist faces all working.",
+            "why": "You only truly know something works when it's running on a real phone, not just on the computer."
+          },
+          {
+            "when": "12 June",
+            "title": "Letting people sign in easily",
+            "what": "Sign in with Google and with Apple were both proven working on the live server — Apple for the very first time.",
+            "why": "Nobody wants to invent yet another password. Easy sign-in is the difference between someone joining and giving up."
+          },
+          {
+            "when": "13 June",
+            "title": "Something alive when you open it",
+            "what": "Filled the discovery feed with 12 real upcoming events across Wiesbaden, Mainz and Frankfurt, sorted by how close they are.",
+            "why": "An empty app feels dead. A full, local feed makes it feel alive from the very first second."
+          },
+          {
+            "when": "13 June",
+            "title": "Never losing anything",
+            "what": "Set up automatic nightly backups plus a watchdog that restarts the app if it ever freezes, with an alert to the phone.",
+            "why": "The moment real people put real information in, losing it is simply not an option."
+          },
+          {
+            "when": "Now",
+            "title": "Getting artists paid",
+            "what": "Wiring up the payment system (Stripe) so artists can actually be paid, with our small fee taken automatically. Test keys are in hand; it isn't switched on yet.",
+            "why": "This is the last big piece before Bloghead is a real, working business — so it's the current focus."
+          }
+        ]
+      }
     },
     "dehgo": {
       "name": "Dehgo",
       "phase": "Cleaning up, getting ready to launch",
-      "accent": "#a98bff"
+      "accent": "#a98bff",
+      "gallery": []
     },
     "no1restaurant": {
       "name": "No.1 Restaurant",
       "phase": "Live — custom domain pending",
       "accent": "#f59e0b",
-      "minor": true
+      "minor": true,
+      "gallery": []
     }
   },
   "log": [
@@ -772,6 +865,87 @@
       "durationMin": 35,
       "ts": "2026-05-29T23:46:12.921Z",
       "progressAfter": 80
+    },
+    {
+      "id": 79,
+      "project": "bloghead",
+      "title": "Booking now works start to finish",
+      "detail": "For the first time ever, a booking goes all the way through — from request, to confirmed, to done — and the invoice is created automatically. This was the single biggest thing that had never worked. The cause turned out to be a hidden database fault; it's now fixed and protected with a test so it can't quietly break again.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-06-12T12:00:00",
+      "progressAfter": 88
+    },
+    {
+      "id": 80,
+      "project": "bloghead",
+      "title": "Real photos replace the placeholders",
+      "detail": "The app now shows 60 real, made-for-us images for the artists and venues instead of stock photos. Besides looking far better, this removes a legal risk that came with using people's pictures without permission.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-06-12T14:30:00",
+      "progressAfter": 89
+    },
+    {
+      "id": 81,
+      "project": "bloghead",
+      "title": "App running on a real iPhone",
+      "detail": "Bloghead was installed and opened on an actual iPhone for the first time, connected to the live server — the animated intro, login, and real artist faces all working in hand. Until now it had only ever run on the computer.",
+      "status": "done",
+      "durationMin": 120,
+      "ts": "2026-06-12T17:00:00",
+      "progressAfter": 90
+    },
+    {
+      "id": 82,
+      "project": "bloghead",
+      "title": "Sign in with Google and Apple works",
+      "detail": "Both 'Sign in with Google' and 'Sign in with Apple' were proven working on the live server — Apple for the very first time. Real accounts were created successfully through both.",
+      "status": "done",
+      "durationMin": 90,
+      "ts": "2026-06-12T19:00:00",
+      "progressAfter": 91
+    },
+    {
+      "id": 83,
+      "project": "bloghead",
+      "title": "The discovery feed is full of events",
+      "detail": "The main feed used to be empty. It now shows 12 real upcoming events across Wiesbaden, Mainz and Frankfurt, sorted by how far away they are — so anyone opening the app sees something live and local right away.",
+      "status": "done",
+      "durationMin": 110,
+      "ts": "2026-06-13T11:00:00",
+      "progressAfter": 93
+    },
+    {
+      "id": 84,
+      "project": "bloghead",
+      "title": "Server now backs itself up every night",
+      "detail": "Bloghead had no automatic backups — if the server died, recent work was gone. It now backs up nightly (kept for weeks), and a watchdog automatically restarts the app if it ever freezes, with an alert sent to the phone.",
+      "status": "done",
+      "durationMin": 100,
+      "ts": "2026-06-13T13:30:00",
+      "progressAfter": 94
+    },
+    {
+      "id": 85,
+      "project": "bloghead",
+      "title": "Payments — connecting Stripe",
+      "detail": "Test payment keys are in hand and the payment system is being wired up so artists can actually get paid (with our 8% fee). It isn't live yet — this is the main thing standing between Bloghead and a working product.",
+      "status": "prog",
+      "durationMin": 90,
+      "ts": "2026-06-13T15:00:00",
+      "progressAfter": 94
     }
-  ]
+  ],
+  "weekHighlight": {
+    "range": "8–13 June",
+    "headlines": [
+      "Bloghead's booking flow now runs end-to-end for the first time — request, to confirmed, to invoice, automatically.",
+      "Bloghead is running on a real iPhone, pointed at the live server — animated intro, login and real photos all working.",
+      "Sign in with Google and Apple are both proven on the live server — Apple for the very first time.",
+      "The discovery feed is live: 12 real upcoming events across Wiesbaden, Mainz and Frankfurt.",
+      "Bloghead now backs itself up every night, with a watchdog that auto-restarts it if it ever freezes.",
+      "Next up for Bloghead: wiring Stripe so artists actually get paid."
+    ]
+  }
 }
