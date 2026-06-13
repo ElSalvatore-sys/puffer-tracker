@@ -19,6 +19,9 @@
 | **Audience** | Non-technical partner. **All copy is plain language, no jargon** (no "migration", "trigger", "Stripe SDK" — say what changed and why it matters). |
 
 ### How to log a step
+**Preferred (any agent/person): the [puffer-feed](https://github.com/ElSalvatore-sys/puffer-feed) MCP tool or CLI** — it funnels every write through one lock so concurrent writers can't clobber `data.json` (use the `log_step` MCP tool, or `puffer log <project> "<title>"`). **⚠️ Do NOT hand-edit `data.json` directly** — direct edits bypass the lock and can clobber a concurrent writer (this happened once). The screenshot agent must commit `shots/` via `write-core.commitPaths()`, not its own `git add`.
+
+Legacy fallback (single-writer only):
 ```bash
 node ~/Developer/puffer-tracker/log-step.mjs \
   --project <thebarapp|bloghead|dehgo|no1restaurant> \
