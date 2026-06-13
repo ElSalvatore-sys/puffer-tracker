@@ -4,7 +4,12 @@
       "name": "TheBarApp",
       "phase": "Making Das Wohnzimmer smarter",
       "accent": "#ff9d5c",
-      "gallery": []
+      "gallery": [
+        { "src": "shots/thebarapp/01-login.webp", "caption": "Welcome screen" },
+        { "src": "shots/thebarapp/02-shifts.webp", "caption": "Shift calendar" },
+        { "src": "shots/thebarapp/03-hub.webp", "caption": "Venue hub" },
+        { "src": "shots/thebarapp/04-chat.webp", "caption": "Team chat" }
+      ]
     },
     "bloghead": {
       "name": "Bloghead",
@@ -40,7 +45,12 @@
         "Marketing & growth",
         "Legal sign-off (DSGVO)"
       ],
-      "gallery": [],
+      "gallery": [
+        { "src": "shots/bloghead/01-discovery.webp", "caption": "Artist discovery" },
+        { "src": "shots/bloghead/02-artist-profile.webp", "caption": "Artist profile" },
+        { "src": "shots/bloghead/03-signin.webp", "caption": "Sign in" },
+        { "src": "shots/bloghead/04-venues.webp", "caption": "Venues" }
+      ],
       "audit": {
         "summary": "Bloghead started as a website, then moved onto the iPhone. Over the last weeks it crossed the line from 'looks finished' to 'actually works' — a booking now runs all the way through with a real invoice, the app runs on a real phone with real photos and real logins, and it backs itself up every night. The one big piece left before it's a real business is taking payments, which is being wired up now.",
         "chapters": [
@@ -105,7 +115,13 @@
       "name": "Dehgo",
       "phase": "Built — waiting on legal & domain to launch",
       "accent": "#a98bff",
-      "gallery": [],
+      "gallery": [
+        { "src": "shots/dehgo/01-venue-dashboard.webp", "caption": "Venue dashboard" },
+        { "src": "shots/dehgo/02-venue-post-job.webp", "caption": "Post a job" },
+        { "src": "shots/dehgo/03-worker-feed.webp", "caption": "Worker job feed" },
+        { "src": "shots/dehgo/04-worker-job-detail.webp", "caption": "Job detail" },
+        { "src": "shots/dehgo/05-worker-profile.webp", "caption": "Worker profile" }
+      ],
       "roadmap": [
         {
           "label": "Plan locked",
@@ -208,7 +224,11 @@
       "phase": "Live — custom domain pending",
       "accent": "#f59e0b",
       "minor": true,
-      "gallery": []
+      "gallery": [
+        { "src": "shots/no1restaurant/01-hero.webp", "caption": "Homepage hero" },
+        { "src": "shots/no1restaurant/02-menu.webp", "caption": "Signature dishes" },
+        { "src": "shots/no1restaurant/03-full-menu.webp", "caption": "Full menu" }
+      ]
     }
   },
   "log": [
