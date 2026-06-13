@@ -103,9 +103,105 @@
     },
     "dehgo": {
       "name": "Dehgo",
-      "phase": "Cleaning up, getting ready to launch",
+      "phase": "Built — waiting on legal & domain to launch",
       "accent": "#a98bff",
-      "gallery": []
+      "gallery": [],
+      "roadmap": [
+        {
+          "label": "Plan locked",
+          "status": "done"
+        },
+        {
+          "label": "Gig loop works",
+          "status": "done"
+        },
+        {
+          "label": "On a real phone",
+          "status": "done"
+        },
+        {
+          "label": "Final build items",
+          "status": "current"
+        },
+        {
+          "label": "Legal sign-off + domain",
+          "status": "next"
+        },
+        {
+          "label": "Beta launch",
+          "status": "later"
+        }
+      ],
+      "side": [
+        "Legal counsel & data agreements",
+        "Domain + security cert",
+        "Apple TestFlight setup"
+      ],
+      "audit": {
+        "summary": "DOGA (working name for TBD) connects hospitality venues with local part-time workers (Aushilfen) across the Rhein-Main area. The core shift loop now works end to end — proven on a real phone and the venue dashboard — and the safety issues from review are closed, the server is prepared, and all the work is safely backed up. The honest blocker to launching for real isn't the code: it's legal sign-off, signed data-handling agreements, and a domain with a security certificate.",
+        "chapters": [
+          {
+            "when": "What it is",
+            "title": "A connector, not a staffing agency",
+            "what": "DOGA introduces venues to nearby part-time workers: a venue posts a shift, workers apply, the venue picks who it wants, and a chat opens so they sort the details.",
+            "why": "Staying a connector — where the venue alone decides and we never touch wages — is what keeps the product on the right side of German staffing law."
+          },
+          {
+            "when": "Earlier",
+            "title": "Building both sides",
+            "what": "Built the worker iPhone app and the venue web dashboard: posting jobs, reviewing applicants, profiles, chat, and safety tools like report and block.",
+            "why": "It's a two-sided marketplace — it only works if both the venue side and the worker side do."
+          },
+          {
+            "when": "12 June",
+            "title": "A clear plan for the whole product",
+            "what": "Put the full vision through an expert review and locked a build order — first a lawful, polished shift-loop, then the bigger features later. Nothing was cut, just sequenced, with the legal lines drawn up front.",
+            "why": "So we build the right things in the right order without tripping over the law later."
+          },
+          {
+            "when": "12 June",
+            "title": "The gig loop works end to end",
+            "what": "Proved the heart of the product — find a shift, apply, get accepted, do the job — working all the way through on both the phone and the venue dashboard, with a realistic test set (50 workers, 10 venues).",
+            "why": "A marketplace that can't complete its core loop isn't a product yet. Now it can."
+          },
+          {
+            "when": "12 June",
+            "title": "Safety and correctness pass",
+            "what": "Closed five issues from review — including making sure a worker can never reach venue-only screens and a shift can't be accidentally filled twice — and fixed photo uploads and chat reliability.",
+            "why": "Trust and correctness have to be right before real people rely on it."
+          },
+          {
+            "when": "12 June",
+            "title": "Right distances everywhere",
+            "what": "The app had assumed everyone was in Frankfurt, so distances were wrong for workers elsewhere; it now uses each worker's real city.",
+            "why": "Distance is the whole point of shift work — it has to be correct beyond a single city."
+          },
+          {
+            "when": "13 June",
+            "title": "On a real phone — and the bugs it found",
+            "what": "Installed it on a real iPhone for the first time. Real-device testing surfaced three issues (the keyboard hiding the chat 'send', a silent application confirmation, un-tappable rows); all three are fixed, with one keyboard check left.",
+            "why": "Simulators don't catch everything — a real phone does."
+          },
+          {
+            "when": "13 June",
+            "title": "Ready to deploy, safely stored",
+            "what": "Prepared everything to run on our server and backed all the work up online so nothing lives on a single computer. The server is configured but not switched on yet.",
+            "why": "No risk of losing work, and a clean switch-on once the launch gates clear."
+          },
+          {
+            "when": "Decision",
+            "title": "Held back the messaging feature on purpose",
+            "what": "Planned a richer messaging feature (templates, attachments) but deliberately parked it — it would add an outside AI service and make the legal approval bigger, right when legal is already the #1 thing holding up launch.",
+            "why": "Don't enlarge the legal pile right before launch; revisit it later as a deliberate choice."
+          },
+          {
+            "when": "Now",
+            "title": "The honest blocker: the lawyer, not the code",
+            "what": "Launching for real is waiting on things outside engineering — written legal sign-off, signed data-handling agreements with our service providers, and a website address with a security certificate. The server is ready to switch on the moment those clear.",
+            "why": "A ready server doesn't make a launch lawful — being honest about the real gate keeps expectations right."
+          }
+        ]
+      }
     },
     "no1restaurant": {
       "name": "No.1 Restaurant",
@@ -935,6 +1031,106 @@
       "durationMin": 90,
       "ts": "2026-06-13T15:00:00",
       "progressAfter": 94
+    },
+    {
+      "id": 86,
+      "project": "dehgo",
+      "title": "A clear plan for the whole product",
+      "detail": "Put the full vision through an expert review and locked a build order: first a lawful, polished shift-loop, then the bigger features later. Nothing was cut — just sequenced — with the legal lines drawn up front.",
+      "status": "done",
+      "durationMin": 180,
+      "ts": "2026-06-11T10:00:00",
+      "progressAfter": 93
+    },
+    {
+      "id": 87,
+      "project": "dehgo",
+      "title": "The gig loop works end to end",
+      "detail": "Proved the heart of the product — a worker finds a shift, applies, gets accepted, and the job gets done — working all the way through on both the phone app and the venue dashboard, with a realistic test set (50 workers, 10 venues).",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-06-12T12:00:00",
+      "progressAfter": 94
+    },
+    {
+      "id": 88,
+      "project": "dehgo",
+      "title": "Fixed five important safety issues",
+      "detail": "Closed five issues found in review — including making sure a worker can never open venue-only screens, and that a shift can't be accidentally filled twice.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-06-12T14:00:00",
+      "progressAfter": 94
+    },
+    {
+      "id": 89,
+      "project": "dehgo",
+      "title": "Photos and chat made reliable",
+      "detail": "Worker profile photos now upload properly, and the in-app chat reconnects reliably and shows your own messages correctly.",
+      "status": "done",
+      "durationMin": 120,
+      "ts": "2026-06-12T16:00:00",
+      "progressAfter": 95
+    },
+    {
+      "id": 90,
+      "project": "dehgo",
+      "title": "Right distances everywhere, not just Frankfurt",
+      "detail": "The app had been assuming everyone was in Frankfurt, so shift distances were wrong for workers elsewhere. It now uses each worker's real city (e.g. Wiesbaden), so distances are correct across the region.",
+      "status": "done",
+      "durationMin": 90,
+      "ts": "2026-06-12T18:00:00",
+      "progressAfter": 95
+    },
+    {
+      "id": 91,
+      "project": "dehgo",
+      "title": "Running on a real iPhone",
+      "detail": "Installed and opened on a real iPhone for the first time, connected to a live backend.",
+      "status": "done",
+      "durationMin": 100,
+      "ts": "2026-06-13T11:00:00",
+      "progressAfter": 95
+    },
+    {
+      "id": 92,
+      "project": "dehgo",
+      "title": "Three phone-only bugs found and fixed",
+      "detail": "Testing on the real phone surfaced three issues — the keyboard hiding the chat 'send' button, an application that sent silently with no confirmation, and rows that weren't tappable. All three are fixed; the keyboard one needs one more check on a real keyboard before it's locked in.",
+      "status": "prog",
+      "durationMin": 90,
+      "ts": "2026-06-13T13:00:00",
+      "progressAfter": 95
+    },
+    {
+      "id": 93,
+      "project": "dehgo",
+      "title": "Server prepared and everything backed up",
+      "detail": "Set up everything the app needs to run on our server and pushed all the work to safe online storage, so nothing is stuck on one computer. The server isn't switched on yet — that waits on the website address and legal sign-off.",
+      "status": "done",
+      "durationMin": 130,
+      "ts": "2026-06-13T15:00:00",
+      "progressAfter": 96
+    },
+    {
+      "id": 94,
+      "project": "dehgo",
+      "title": "Held back the messaging feature on purpose",
+      "detail": "Planned a richer messaging feature (templates and attachments) but deliberately put it on hold: it would add an outside AI service and make the legal approval bigger, right when legal is already the main thing holding up launch.",
+      "status": "done",
+      "durationMin": 60,
+      "ts": "2026-06-13T16:00:00",
+      "progressAfter": 96
+    },
+    {
+      "id": 95,
+      "project": "dehgo",
+      "title": "Waiting on legal sign-off and a domain to launch",
+      "detail": "The code is nearly there, but launching for real is waiting on things outside coding: a lawyer's written OK, signed data-handling agreements with our service providers, and the website address plus its security certificate. The server is ready to switch on the moment those clear.",
+      "status": "block",
+      "durationMin": 30,
+      "ts": "2026-06-13T17:00:00",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
