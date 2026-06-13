@@ -2,14 +2,122 @@
   "projects": {
     "thebarapp": {
       "name": "TheBarApp",
-      "phase": "Making Das Wohnzimmer smarter",
+      "phase": "Feature-complete — clearing the path to the public beta",
       "accent": "#ff9d5c",
       "gallery": [
-        { "src": "shots/thebarapp/01-login.webp", "caption": "Welcome screen" },
-        { "src": "shots/thebarapp/02-shifts.webp", "caption": "Shift calendar" },
-        { "src": "shots/thebarapp/03-hub.webp", "caption": "Venue hub" },
-        { "src": "shots/thebarapp/04-chat.webp", "caption": "Team chat" }
-      ]
+        {
+          "src": "shots/thebarapp/01-login.webp",
+          "caption": "Welcome screen"
+        },
+        {
+          "src": "shots/thebarapp/02-shifts.webp",
+          "caption": "Shift calendar"
+        },
+        {
+          "src": "shots/thebarapp/03-hub.webp",
+          "caption": "Venue hub"
+        },
+        {
+          "src": "shots/thebarapp/04-chat.webp",
+          "caption": "Team chat"
+        }
+      ],
+      "roadmap": [
+        {
+          "label": "Live at Das Wohnzimmer",
+          "status": "done"
+        },
+        {
+          "label": "Smart scheduling",
+          "status": "done"
+        },
+        {
+          "label": "Menu + till modules",
+          "status": "done"
+        },
+        {
+          "label": "Privacy & assistant pass",
+          "status": "done"
+        },
+        {
+          "label": "Public TestFlight beta",
+          "status": "current"
+        },
+        {
+          "label": "Onboard venue #2",
+          "status": "later"
+        }
+      ],
+      "side": [
+        "Apple beta review (2.0(10))",
+        "Steuerberater VAT rates",
+        "Device sign-off (avatars + push)"
+      ],
+      "audit": {
+        "summary": "TheBarApp is the all-in-one system running Das Wohnzimmer in Wiesbaden — staff scheduling, stock, recipes, menus, the till, and an in-app assistant. This stretch added a daily cash register, a full digital-menu module (with a public page you can build from a photo or even your voice), privacy-safe staff avatars, and closed a serious cross-venue privacy gap. It's feature-complete and healthy; the remaining steps to the public beta are external waits — Apple's review, the tax advisor's VAT rates, and a couple of real-phone checks.",
+        "chapters": [
+          {
+            "when": "What it is",
+            "title": "One system to run a venue",
+            "what": "TheBarApp handles the whole operation of a bar or restaurant in one place — staff scheduling, stock, recipes, menus, the daily till, and an assistant that answers questions and takes action. The live pilot is Das Wohnzimmer in Wiesbaden.",
+            "why": "Venues juggle a dozen tools; one system that does it all is the whole pitch."
+          },
+          {
+            "when": "Already live",
+            "title": "The daily basics, working",
+            "what": "Already running for Das Wohnzimmer: smart staff scheduling, stock and recipe management, scanning a paper menu into the app, and a morning briefing with real forecast numbers.",
+            "why": "These are the things a venue touches every single day — they had to work first."
+          },
+          {
+            "when": "11 June",
+            "title": "Closed a privacy gap between venues",
+            "what": "Found and fixed a serious issue where one venue could see another's reservations, regulars and assistant data. Fixed it, cleaned up the affected records, deployed to the live server, and proved each venue now only sees its own.",
+            "why": "Keeping each venue's data separate is non-negotiable — trust is the product."
+          },
+          {
+            "when": "11 June",
+            "title": "The assistant learned to act, not just chat",
+            "what": "The in-app assistant (Wozi) can now carry out real actions from a message — like reporting someone sick or offering a shift — and always asks you to confirm first so nothing happens by accident.",
+            "why": "It turns a chatbot into a genuine helper that saves the manager time."
+          },
+          {
+            "when": "11–12 June",
+            "title": "A daily cash register — 'the bank'",
+            "what": "Built a daily till module: count the drawer at close, see the day's real profit. It was built in a safe sandbox first so it could never touch live data by accident, then shipped to the live server switched off — ready to turn on for Das Wohnzimmer whenever you choose.",
+            "why": "Gives the venue a clean, honest end-of-day money picture — built carefully because money is sensitive."
+          },
+          {
+            "when": "12 June",
+            "title": "Made the till match real life",
+            "what": "Added 'other costs' (things paid out of the till or someone's own pocket) and polished the screens after a live demo. A test day came out to a clean profit of 1.541,80 €.",
+            "why": "The till has to mirror how money actually moves day to day, not a tidy theory."
+          },
+          {
+            "when": "13 June",
+            "title": "A full digital-menu module",
+            "what": "Venues can now build and edit their own menu in the dashboard, and it gets a clean public web page with its own link and a QR code — three polished design themes, allergen info, and proper German prices.",
+            "why": "A modern, shareable menu built right into the platform — no separate tool needed."
+          },
+          {
+            "when": "13 June",
+            "title": "A menu from a photo, a file, or your voice",
+            "what": "Added a way to fill a menu automatically — upload a photo or file of an existing menu, paste a link, or just speak it — and it drafts the items for you to review. For now this runs on test venues only, while we clear the data-protection steps before real venues use it.",
+            "why": "Turns a printed menu into a digital one in minutes instead of typing every dish."
+          },
+          {
+            "when": "13 June",
+            "title": "Privacy-safe staff avatars",
+            "what": "Designed simple drawn avatars for staff — not photos and not AI faces — so the schedule and feed feel personal without ever storing anyone's picture. Built and waiting on a final check on a real phone.",
+            "why": "Warmth and personality without the privacy cost or expense of real photos."
+          },
+          {
+            "when": "Now",
+            "title": "The honest blocker: Apple, the tax advisor, a phone check",
+            "what": "The app is feature-complete and healthy. The remaining steps to the public beta are outside coding: Apple's review of the latest build, the tax advisor's confirmed VAT rates (to switch the till from gross to net), and two quick checks on a real phone.",
+            "why": "Naming the real waits keeps expectations honest — the code is ready; people and process are the gate."
+          }
+        ]
+      }
     },
     "bloghead": {
       "name": "Bloghead",
@@ -46,10 +154,22 @@
         "Legal sign-off (DSGVO)"
       ],
       "gallery": [
-        { "src": "shots/bloghead/01-discovery.webp", "caption": "Artist discovery" },
-        { "src": "shots/bloghead/02-artist-profile.webp", "caption": "Artist profile" },
-        { "src": "shots/bloghead/03-signin.webp", "caption": "Sign in" },
-        { "src": "shots/bloghead/04-venues.webp", "caption": "Venues" }
+        {
+          "src": "shots/bloghead/01-discovery.webp",
+          "caption": "Artist discovery"
+        },
+        {
+          "src": "shots/bloghead/02-artist-profile.webp",
+          "caption": "Artist profile"
+        },
+        {
+          "src": "shots/bloghead/03-signin.webp",
+          "caption": "Sign in"
+        },
+        {
+          "src": "shots/bloghead/04-venues.webp",
+          "caption": "Venues"
+        }
       ],
       "audit": {
         "summary": "Bloghead started as a website, then moved onto the iPhone. Over the last weeks it crossed the line from 'looks finished' to 'actually works' — a booking now runs all the way through with a real invoice, the app runs on a real phone with real photos and real logins, and it backs itself up every night. The one big piece left before it's a real business is taking payments, which is being wired up now.",
@@ -116,11 +236,26 @@
       "phase": "Built — waiting on legal & domain to launch",
       "accent": "#a98bff",
       "gallery": [
-        { "src": "shots/dehgo/01-venue-dashboard.webp", "caption": "Venue dashboard" },
-        { "src": "shots/dehgo/02-venue-post-job.webp", "caption": "Post a job" },
-        { "src": "shots/dehgo/03-worker-feed.webp", "caption": "Worker job feed" },
-        { "src": "shots/dehgo/04-worker-job-detail.webp", "caption": "Job detail" },
-        { "src": "shots/dehgo/05-worker-profile.webp", "caption": "Worker profile" }
+        {
+          "src": "shots/dehgo/01-venue-dashboard.webp",
+          "caption": "Venue dashboard"
+        },
+        {
+          "src": "shots/dehgo/02-venue-post-job.webp",
+          "caption": "Post a job"
+        },
+        {
+          "src": "shots/dehgo/03-worker-feed.webp",
+          "caption": "Worker job feed"
+        },
+        {
+          "src": "shots/dehgo/04-worker-job-detail.webp",
+          "caption": "Job detail"
+        },
+        {
+          "src": "shots/dehgo/05-worker-profile.webp",
+          "caption": "Worker profile"
+        }
       ],
       "roadmap": [
         {
@@ -225,9 +360,18 @@
       "accent": "#f59e0b",
       "minor": true,
       "gallery": [
-        { "src": "shots/no1restaurant/01-hero.webp", "caption": "Homepage hero" },
-        { "src": "shots/no1restaurant/02-menu.webp", "caption": "Signature dishes" },
-        { "src": "shots/no1restaurant/03-full-menu.webp", "caption": "Full menu" }
+        {
+          "src": "shots/no1restaurant/01-hero.webp",
+          "caption": "Homepage hero"
+        },
+        {
+          "src": "shots/no1restaurant/02-menu.webp",
+          "caption": "Signature dishes"
+        },
+        {
+          "src": "shots/no1restaurant/03-full-menu.webp",
+          "caption": "Full menu"
+        }
       ]
     }
   },
@@ -1151,6 +1295,106 @@
       "durationMin": 30,
       "ts": "2026-06-13T17:00:00",
       "progressAfter": 96
+    },
+    {
+      "id": 96,
+      "project": "thebarapp",
+      "title": "Closed a privacy gap between venues",
+      "detail": "Found and fixed a serious issue where one venue could see another venue's reservations, regulars and assistant data. Fixed it, cleaned up the affected records, deployed to the live server, and proved each venue now only sees its own.",
+      "status": "done",
+      "durationMin": 160,
+      "ts": "2026-06-11T11:00:00",
+      "progressAfter": 82
+    },
+    {
+      "id": 97,
+      "project": "thebarapp",
+      "title": "The assistant can now do things, not just chat",
+      "detail": "The in-app assistant (Wozi) can now carry out real actions from a message — like reporting someone sick or offering a shift — and always asks you to confirm first, so nothing happens by accident.",
+      "status": "done",
+      "durationMin": 180,
+      "ts": "2026-06-11T15:00:00",
+      "progressAfter": 83
+    },
+    {
+      "id": 98,
+      "project": "thebarapp",
+      "title": "New daily cash register (Tageskasse) — 'the bank'",
+      "detail": "Built a daily till module: count the drawer at close and see the day's real profit. Built in a safe sandbox first so it could never touch live data by accident, then shipped to the live server switched off — ready to turn on for Das Wohnzimmer whenever you choose.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-06-11T18:30:00",
+      "progressAfter": 84
+    },
+    {
+      "id": 99,
+      "project": "thebarapp",
+      "title": "Daily till improved: other costs + polish",
+      "detail": "Added 'other costs' (things paid out of the till or someone's own pocket) and polished the screens after a live demo. A test day came out to a clean profit of 1.541,80 €.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-06-12T11:00:00",
+      "progressAfter": 85
+    },
+    {
+      "id": 100,
+      "project": "thebarapp",
+      "title": "Built the digital menu module (Speisekarten)",
+      "detail": "Venues can now build and edit their own menu in the dashboard, and it gets a clean public web page with its own link and a QR code — three polished design themes, allergen info, and proper German prices.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-06-13T12:00:00",
+      "progressAfter": 86
+    },
+    {
+      "id": 101,
+      "project": "thebarapp",
+      "title": "Make a menu from a photo, file, or your voice",
+      "detail": "Added a way to fill a menu automatically — upload a photo or file of an existing menu, paste a link, or just speak it — and it drafts the items for you to review. For now this runs on test venues only, while we clear the data-protection steps before real venues use it.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-06-13T14:30:00",
+      "progressAfter": 87
+    },
+    {
+      "id": 102,
+      "project": "thebarapp",
+      "title": "Public menu page built for search & sharing",
+      "detail": "Built the public menu website (menu.thebarapp.de) — fast, mobile-first and search-engine-friendly, with an embed option and print-to-PDF.",
+      "status": "done",
+      "durationMin": 200,
+      "ts": "2026-06-13T16:00:00",
+      "progressAfter": 87
+    },
+    {
+      "id": 103,
+      "project": "thebarapp",
+      "title": "Privacy-safe staff avatars",
+      "detail": "Designed simple drawn avatars for staff — not photos and not AI faces — so the schedule and feed feel personal without ever storing anyone's picture. Built; waiting on a final check on a real phone.",
+      "status": "prog",
+      "durationMin": 150,
+      "ts": "2026-06-12T20:00:00",
+      "progressAfter": 86
+    },
+    {
+      "id": 104,
+      "project": "thebarapp",
+      "title": "Fixed the shift-offer phone notification",
+      "detail": "Fixed an issue where the 'a shift was offered to you' phone notification was being silently dropped. Fixed; needs one check on a real phone to confirm tap-through and accept/decline.",
+      "status": "prog",
+      "durationMin": 90,
+      "ts": "2026-06-12T21:30:00",
+      "progressAfter": 86
+    },
+    {
+      "id": 105,
+      "project": "thebarapp",
+      "title": "Waiting on Apple, the tax advisor & a phone check",
+      "detail": "The app is feature-complete and healthy. The last steps to the public beta are outside coding: Apple's review of the latest build, the tax advisor's confirmed VAT rates (to switch the till from gross to net), and two quick checks on a real phone.",
+      "status": "block",
+      "durationMin": 30,
+      "ts": "2026-06-13T17:30:00",
+      "progressAfter": 88
     }
   ],
   "weekHighlight": {
