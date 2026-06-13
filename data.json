@@ -356,7 +356,7 @@
     },
     "no1restaurant": {
       "name": "No.1 Restaurant",
-      "phase": "Live — custom domain pending",
+      "phase": "Live — going for the signed contract",
       "accent": "#f59e0b",
       "minor": true,
       "gallery": [
@@ -372,6 +372,36 @@
           "src": "shots/no1restaurant/03-full-menu.webp",
           "caption": "Full menu"
         }
+      ],
+      "roadmap": [
+        {
+          "label": "Site built & live",
+          "status": "done"
+        },
+        {
+          "label": "Custom domain",
+          "status": "current"
+        },
+        {
+          "label": "Show the owner",
+          "status": "next"
+        },
+        {
+          "label": "Agree price & scope",
+          "status": "later"
+        },
+        {
+          "label": "Sign the contract",
+          "status": "later"
+        },
+        {
+          "label": "Paying client",
+          "status": "later"
+        }
+      ],
+      "side": [
+        "Owner walkthrough",
+        "Custom domain go-live"
       ]
     }
   },
