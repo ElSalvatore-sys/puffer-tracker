@@ -6,19 +6,19 @@
       "accent": "#ff9d5c",
       "gallery": [
         {
-          "src": "shots/thebarapp/01-login.webp",
-          "caption": "Welcome screen"
+          "src": "shots/thebarapp/bento-01-hub.webp",
+          "caption": "Hub"
         },
         {
-          "src": "shots/thebarapp/02-shifts.webp",
-          "caption": "Shift calendar"
+          "src": "shots/thebarapp/bento-02-shifts.webp",
+          "caption": "Open shifts"
         },
         {
-          "src": "shots/thebarapp/03-hub.webp",
-          "caption": "Venue hub"
+          "src": "shots/thebarapp/bento-03-feed.webp",
+          "caption": "Team feed"
         },
         {
-          "src": "shots/thebarapp/04-chat.webp",
+          "src": "shots/thebarapp/bento-04-chat.webp",
           "caption": "Team chat"
         }
       ],
