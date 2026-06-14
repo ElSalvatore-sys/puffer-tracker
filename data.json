@@ -1461,6 +1461,16 @@
       "durationMin": 120,
       "ts": "2026-06-14T03:00:00",
       "progressAfter": 89
+    },
+    {
+      "id": 110,
+      "project": "bloghead",
+      "title": "Faster, steadier sign-in under load",
+      "detail": "Signing in no longer slows the whole app down when several people log in at once, and when the server gets very busy it now backs off gracefully instead of throwing errors. Also fixed a hidden startup-crash risk in the server settings. Deployed to the live server and verified working (real sign-in went through end-to-end).",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-14T16:10:56.803Z",
+      "progressAfter": 94
     }
   ],
   "weekHighlight": {
