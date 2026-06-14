@@ -145,16 +145,16 @@
           "status": "done"
         },
         {
-          "label": "Payments live",
-          "status": "current"
+          "label": "Payments (test)",
+          "status": "done"
         },
         {
           "label": "First TestFlight",
-          "status": "next"
+          "status": "current"
         },
         {
           "label": "50–100 testers",
-          "status": "later"
+          "status": "next"
         },
         {
           "label": "Public launch",
