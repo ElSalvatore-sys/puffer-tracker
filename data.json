@@ -2,7 +2,7 @@
   "projects": {
     "thebarapp": {
       "name": "TheBarApp",
-      "phase": "Feature-complete — clearing the path to the public beta",
+      "phase": "Testing the demo at Das Wohnzimmer",
       "accent": "#ff9d5c",
       "gallery": [
         {
@@ -36,10 +36,6 @@
       ],
       "roadmap": [
         {
-          "label": "Live at Das Wohnzimmer",
-          "status": "done"
-        },
-        {
           "label": "Smart scheduling",
           "status": "done"
         },
@@ -52,8 +48,12 @@
           "status": "done"
         },
         {
-          "label": "Public TestFlight beta",
+          "label": "Demo at Das Wohnzimmer",
           "status": "current"
+        },
+        {
+          "label": "Live at Das Wohnzimmer",
+          "status": "next"
         },
         {
           "label": "Onboard venue #2",
@@ -66,18 +66,18 @@
         "Device sign-off (avatars + push)"
       ],
       "audit": {
-        "summary": "TheBarApp is the all-in-one system running Das Wohnzimmer in Wiesbaden — staff scheduling, stock, recipes, menus, the till, and an in-app assistant. This stretch added a daily cash register, a full digital-menu module (with a public page you can build from a photo or even your voice), privacy-safe staff avatars, and closed a serious cross-venue privacy gap. It's feature-complete and healthy; the remaining steps to the public beta are external waits — Apple's review, the tax advisor's VAT rates, and a couple of real-phone checks.",
+        "summary": "TheBarApp is the all-in-one system built for Das Wohnzimmer in Wiesbaden — staff scheduling, stock, recipes, menus, the till, and an in-app assistant. This stretch added a daily cash register, a full digital-menu module (with a public page you can build from a photo or even your voice), privacy-safe staff avatars, and closed a serious cross-venue privacy gap. It's feature-complete and healthy; right now it's being tried out as a demo at Das Wohnzimmer — going live there for real is the next milestone.",
         "chapters": [
           {
             "when": "What it is",
             "title": "One system to run a venue",
-            "what": "TheBarApp handles the whole operation of a bar or restaurant in one place — staff scheduling, stock, recipes, menus, the daily till, and an assistant that answers questions and takes action. The live pilot is Das Wohnzimmer in Wiesbaden.",
+            "what": "TheBarApp handles the whole operation of a bar or restaurant in one place — staff scheduling, stock, recipes, menus, the daily till, and an assistant that answers questions and takes action. The first venue is Das Wohnzimmer in Wiesbaden, where it's currently being tested as a demo.",
             "why": "Venues juggle a dozen tools; one system that does it all is the whole pitch."
           },
           {
             "when": "Already live",
-            "title": "The daily basics, working",
-            "what": "Already running for Das Wohnzimmer: smart staff scheduling, stock and recipe management, scanning a paper menu into the app, and a morning briefing with real forecast numbers.",
+            "title": "The daily basics, built",
+            "what": "Built and being demo-tested for Das Wohnzimmer: smart staff scheduling, stock and recipe management, scanning a paper menu into the app, and a morning briefing with real forecast numbers.",
             "why": "These are the things a venue touches every single day — they had to work first."
           },
           {
@@ -149,12 +149,16 @@
           "status": "done"
         },
         {
-          "label": "First TestFlight",
+          "label": "TestFlight (team)",
           "status": "current"
         },
         {
-          "label": "50–100 testers",
+          "label": "10–20 testers",
           "status": "next"
+        },
+        {
+          "label": "50–100 testers",
+          "status": "later"
         },
         {
           "label": "Public launch",
@@ -1523,6 +1527,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T20:03:37.751Z",
       "progressAfter": 96
+    },
+    {
+      "id": 115,
+      "project": "thebarapp",
+      "title": "Now in demo testing at Das Wohnzimmer",
+      "detail": "TheBarApp is being tried out as a demo at Das Wohnzimmer to gather feedback — it isn't in daily production use there yet. Going live for real is the next milestone.",
+      "status": "prog",
+      "durationMin": 0,
+      "ts": "2026-06-14T12:00:00",
+      "progressAfter": 89
     }
   ],
   "weekHighlight": {
