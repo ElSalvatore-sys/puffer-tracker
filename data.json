@@ -169,6 +169,10 @@
         {
           "src": "shots/bloghead/04-venues.webp",
           "caption": "Venues"
+        },
+        {
+          "src": "shots/bloghead/web-01-home.webp",
+          "caption": "Website"
         }
       ],
       "audit": {
