@@ -20,6 +20,18 @@
         {
           "src": "shots/thebarapp/bento-04-chat.webp",
           "caption": "Team chat"
+        },
+        {
+          "src": "shots/thebarapp/menu-cards.webp",
+          "caption": "Menu: cards & categories"
+        },
+        {
+          "src": "shots/thebarapp/menu-dishes.webp",
+          "caption": "Menu: dishes with photos"
+        },
+        {
+          "src": "shots/thebarapp/menu-design.webp",
+          "caption": "Menu: 7 designs"
         }
       ],
       "roadmap": [
