@@ -1503,6 +1503,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T20:03:34.461Z",
       "progressAfter": 95
+    },
+    {
+      "id": 113,
+      "project": "bloghead",
+      "title": "Tested for a crowd, added downtime alerts",
+      "detail": "Load-tested the app for 50–100 people at once (reads held up with zero errors), and added a monitor that alerts us within minutes if the app ever goes down.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-14T20:03:36.127Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
