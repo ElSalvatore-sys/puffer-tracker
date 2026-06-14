@@ -1513,6 +1513,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T20:03:36.127Z",
       "progressAfter": 96
+    },
+    {
+      "id": 114,
+      "project": "bloghead",
+      "title": "First TestFlight build uploaded",
+      "detail": "The first TestFlight build is uploaded and processing in Apple's App Store Connect. It's internal testing, so no Apple review is needed — once it finishes processing, a friend can install it on their iPhone.",
+      "status": "prog",
+      "durationMin": 0,
+      "ts": "2026-06-14T20:03:37.751Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
