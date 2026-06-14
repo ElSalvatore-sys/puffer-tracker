@@ -1439,6 +1439,36 @@
       "durationMin": 0,
       "ts": "2026-06-14T06:44:44.594Z",
       "progressAfter": 94
+    },
+    {
+      "id": 107,
+      "project": "thebarapp",
+      "title": "Build and edit menus on the iPhone",
+      "detail": "The whole menu editor now works on the iPhone, not just the dashboard — add cards, categories and dishes, choose a design, and import a menu by photo or voice, all from the phone.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-06-13T20:00:00",
+      "progressAfter": 89
+    },
+    {
+      "id": 108,
+      "project": "thebarapp",
+      "title": "Menu dishes show real food photos",
+      "detail": "Menu items can now show professional food photos — uploaded or generated automatically — kept on our own European servers. The public menu also comes in seven designs with custom colours and fonts to match each venue.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-06-14T02:00:00",
+      "progressAfter": 89
+    },
+    {
+      "id": 109,
+      "project": "thebarapp",
+      "title": "Menu polish — awaiting your phone sign-off",
+      "detail": "Added smooth, premium animations throughout the menu screens (transitions, a live voice waveform, image fades). Built and on the phone — the last step is a quick feel-check on your iPhone.",
+      "status": "block",
+      "durationMin": 120,
+      "ts": "2026-06-14T03:00:00",
+      "progressAfter": 89
     }
   ],
   "weekHighlight": {
