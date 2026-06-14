@@ -1537,6 +1537,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T12:00:00",
       "progressAfter": 89
+    },
+    {
+      "id": 116,
+      "project": "bloghead",
+      "title": "Whole app checked, 124 fixes found",
+      "detail": "Built an automated walkthrough that opens every screen of the app — artist side, venue side and fan side, in both light and dark mode — takes a picture of each, then reviewed all 76. Found 124 things to improve. The biggest by far: lots of the app still shows English text even though it should be German, plus several screens are hard to read in light mode. Also set up a repeatable test so we can re-check the whole app anytime in minutes. A prioritized fix list is ready.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-14T23:01:30.312Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
