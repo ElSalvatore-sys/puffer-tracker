@@ -1483,6 +1483,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T16:10:56.803Z",
       "progressAfter": 94
+    },
+    {
+      "id": 111,
+      "project": "bloghead",
+      "title": "Payments are wired up (test mode)",
+      "detail": "The payment system now works end-to-end in test mode — a booking can be paid with our 8% fee shown, using test cards (no real money yet). It clears the last big functional gap before real charges.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-14T20:03:32.388Z",
+      "progressAfter": 95
     }
   ],
   "weekHighlight": {
