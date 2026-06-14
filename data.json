@@ -1493,6 +1493,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T20:03:32.388Z",
       "progressAfter": 95
+    },
+    {
+      "id": 112,
+      "project": "bloghead",
+      "title": "Fixed a friend's 9 bugs and the light theme",
+      "detail": "Merged a batch fixing the nine issues a friend found while testing, plus a full light-theme cleanup and booking-form and date fixes.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-14T20:03:34.461Z",
+      "progressAfter": 95
     }
   ],
   "weekHighlight": {
