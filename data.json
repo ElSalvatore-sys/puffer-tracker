@@ -241,24 +241,16 @@
       "accent": "#a98bff",
       "gallery": [
         {
-          "src": "shots/dehgo/01-venue-dashboard.webp",
-          "caption": "Venue dashboard"
-        },
-        {
-          "src": "shots/dehgo/02-venue-post-job.webp",
-          "caption": "Post a job"
-        },
-        {
-          "src": "shots/dehgo/03-worker-feed.webp",
-          "caption": "Worker job feed"
-        },
-        {
-          "src": "shots/dehgo/04-worker-job-detail.webp",
-          "caption": "Job detail"
-        },
-        {
-          "src": "shots/dehgo/05-worker-profile.webp",
+          "src": "shots/dehgo/app-profile.webp",
           "caption": "Worker profile"
+        },
+        {
+          "src": "shots/dehgo/app-skills.webp",
+          "caption": "Pick your skills"
+        },
+        {
+          "src": "shots/dehgo/app-settings.webp",
+          "caption": "Settings & privacy"
         }
       ],
       "roadmap": [
