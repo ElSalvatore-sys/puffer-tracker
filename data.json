@@ -1429,6 +1429,16 @@
       "durationMin": 30,
       "ts": "2026-06-13T17:30:00",
       "progressAfter": 88
+    },
+    {
+      "id": 106,
+      "project": "bloghead",
+      "title": "User photos & audio now survive restarts",
+      "detail": "Profile pictures, cover images and audio clips were being wiped every time the server was updated, because they were stored in a temporary spot with no safe home. They now live in a permanent, protected location that survives restarts. Also added a fair-use limit (30 uploads per hour per person) so no one can flood the storage, and prepared a one-switch move to cloud storage (Cloudflare) for when that account is turned on. All 1010 automated checks pass.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-14T06:44:44.594Z",
+      "progressAfter": 94
     }
   ],
   "weekHighlight": {
