@@ -1547,6 +1547,16 @@
       "durationMin": 0,
       "ts": "2026-06-14T23:01:30.312Z",
       "progressAfter": 96
+    },
+    {
+      "id": 117,
+      "project": "bloghead",
+      "title": "Bloghead now has a web version",
+      "detail": "Built a full browser version of the Bloghead app overnight — same look, same photos, same data as the phone app. People can sign in, browse artists and venues, send a booking request through the step-by-step flow (with the 8% fee shown), sign the contract, chat in real time, and manage their profile. A full booking was run from request all the way to a finished invoice to prove it works. It's all tested with screenshots and saved as a draft for review — nothing is live yet. Still needs payment keys and a Google/Apple web login before launch.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-15T07:03:08.891Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
