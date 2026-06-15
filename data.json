@@ -1557,6 +1557,16 @@
       "durationMin": 0,
       "ts": "2026-06-15T07:03:08.891Z",
       "progressAfter": 96
+    },
+    {
+      "id": 118,
+      "project": "bloghead",
+      "title": "Filmed the full booking deal, both sides",
+      "detail": "Recorded a screen-capture walkthrough of the concert-booking flow inside the iPhone app, switching between the event organiser and the artist accounts. It shows the finished deal from both sides — the signed contract lifecycle (requested → accepted → contract → confirmed → completed) and the PAID invoice (Rechnung 2026-001, 1.800,00 €). Along the way fixed two app bugs uncovered by the recording: the accounting screen crashed on the invoice list, and the sign-in could load the wrong saved account.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-15T08:58:38.783Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
