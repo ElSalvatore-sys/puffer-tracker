@@ -1587,6 +1587,16 @@
       "durationMin": 0,
       "ts": "2026-06-16T19:06:15.027Z",
       "progressAfter": 96
+    },
+    {
+      "id": 121,
+      "project": "bloghead",
+      "title": "Card payments fixed and live",
+      "detail": "Card payments now work end-to-end. The card is only reserved when the customer pays, and the money is taken only after BOTH sides sign the contract — so no one is charged before the deal is sealed. Fixed the bug that stopped payments from starting, deployed to the live server (test mode), and verified it there. The 8% platform fee is applied correctly. The web version's checkout was matched to the same rules and proven locally. (Bank-transfer/SEPA and the public website launch are intentionally left for later.)",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-16T19:15:02.626Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
