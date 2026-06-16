@@ -1577,6 +1577,16 @@
       "durationMin": 0,
       "ts": "2026-06-16T16:27:56.126Z",
       "progressAfter": 96
+    },
+    {
+      "id": 120,
+      "project": "bloghead",
+      "title": "All three booking flows proven, with videos",
+      "detail": "Recorded full demo videos of all three ways a booking happens on Bloghead — an artist offering a venue, an organiser booking an artist, and a fan booking an artist for a private party. Each runs the whole way through: request, accept, contract, both signatures, the event finishing, the invoice, and getting paid. Swapped the placeholder cartoon avatars for real photos. Also found and fixed a bug that was stopping contract signing from working inside the app.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-16T19:06:15.027Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
