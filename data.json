@@ -1567,6 +1567,16 @@
       "durationMin": 0,
       "ts": "2026-06-15T08:58:38.783Z",
       "progressAfter": 96
+    },
+    {
+      "id": 119,
+      "project": "dehgo",
+      "title": "Whole hiring journey works end-to-end",
+      "detail": "Walked and recorded the full flow on the workforce app: a venue posts a shift → it shows up for a nearby worker → the worker applies → the venue accepts (a chat opens) → the venue marks the shift complete. All real, captured as one video. Also smoothed a few rough spots from the app walkthrough (a stuck \"skills\" section, a full shift still labelled \"open\", a report button that looked like a plain link) — ready for your review, not yet live. One gap found: there's no \"congratulations\" screen when a worker finishes their first shift — that moment passes silently.",
+      "status": "prog",
+      "durationMin": 0,
+      "ts": "2026-06-16T16:27:56.126Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
