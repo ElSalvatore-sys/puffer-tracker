@@ -1597,6 +1597,16 @@
       "durationMin": 0,
       "ts": "2026-06-16T19:15:02.626Z",
       "progressAfter": 96
+    },
+    {
+      "id": 122,
+      "project": "bloghead",
+      "title": "Booking deal works inside the app",
+      "detail": "Before, the booking lifecycle only worked behind the scenes — in the actual app the \"Generate contract\" button did nothing and there was no working payment step. Now every step works by tapping the real app: for all three deal types (artist↔venue, organiser↔artist, fan↔artist) the deal goes request → contract → both sign with a code → pay by card → done, with the invoice marked paid. Filmed end-to-end on a test phone. On a branch, tested only, not yet live.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-17T03:21:46.510Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
