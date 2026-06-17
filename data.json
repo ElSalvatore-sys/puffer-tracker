@@ -1607,6 +1607,16 @@
       "durationMin": 0,
       "ts": "2026-06-17T03:21:46.510Z",
       "progressAfter": 96
+    },
+    {
+      "id": 123,
+      "project": "thebarapp",
+      "title": "Menu assistant now updates the menu live",
+      "detail": "Owners can type a menu change in plain language in the dashboard's AI assistant — e.g. a new price — review it, and confirm. The change is now applied to the live menu immediately (before, confirming only marked the request without changing anything). Proven end-to-end on a test venue: a dish price went 10,50 € → 12,00 € and back. The dashboard fix is live now; the matching change for the phone app is prepared and will ship with the next app update.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-17T12:38:13.756Z",
+      "progressAfter": 89
     }
   ],
   "weekHighlight": {
