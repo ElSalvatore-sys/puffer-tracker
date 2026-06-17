@@ -1627,6 +1627,16 @@
       "durationMin": 0,
       "ts": "2026-06-17T15:34:25.675Z",
       "progressAfter": 96
+    },
+    {
+      "id": 125,
+      "project": "dehgo",
+      "title": "Workers get a celebration after each shift",
+      "detail": "Added a \"well done\" moment for workers when they finish shifts — first shift, then at 5, 10, 25 and 50. Proven on a real run: a venue posts a job, the worker applies, gets accepted, both chat, the venue marks it complete, and the celebration fires. Also tidied everything into one clean, up-to-date version of the app, and fixed two display glitches: a profile screen showing internal labels, and a message template that left \"…\" blanks in messages to venues.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-17T17:07:05.799Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
