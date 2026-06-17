@@ -1617,6 +1617,16 @@
       "durationMin": 0,
       "ts": "2026-06-17T12:38:13.756Z",
       "progressAfter": 89
+    },
+    {
+      "id": 124,
+      "project": "bloghead",
+      "title": "Card payment screen works in the app",
+      "detail": "The card-payment screen (Apple's secure card sheet) now actually opens and works inside the iPhone app: you enter the card, it gets authorised, and the money is only taken after both sides sign the contract — proven on a test phone and screen-recorded (test mode, nothing charged for real). I also set up three test accounts (a dev artist, venue and booker) so the whole booking can be run end-to-end on your own phone, with the sign-in codes coming to your email. Next: a new test build for you to try it, then your on-device check.",
+      "status": "prog",
+      "durationMin": 0,
+      "ts": "2026-06-17T15:34:25.675Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
