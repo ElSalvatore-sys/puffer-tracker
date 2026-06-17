@@ -1637,6 +1637,16 @@
       "durationMin": 0,
       "ts": "2026-06-17T17:07:05.799Z",
       "progressAfter": 96
+    },
+    {
+      "id": 126,
+      "project": "bloghead",
+      "title": "Deal, signing and payment work together",
+      "detail": "All three booking types (artist↔venue, organiser→artist, fan→artist) now run the FULL deal inside the app on one build: send request → generate contract → both sides sign with a code → card is really charged → invoice created. Charges use the proper \"hold now, take the money once both have signed\" model, verified with real test-card payments and filmed for each flow. Sits on a review branch (draft) — not live yet; one payment-order safeguard still to add before go-live.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-17T17:43:48.530Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
