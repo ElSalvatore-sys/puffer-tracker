@@ -1647,6 +1647,16 @@
       "durationMin": 0,
       "ts": "2026-06-17T17:43:48.530Z",
       "progressAfter": 96
+    },
+    {
+      "id": 127,
+      "project": "bloghead",
+      "title": "Read the contract before signing it",
+      "detail": "The app now shows the actual contract document. After a contract is created it opens automatically so you can read the full terms — who, fee, date, cancellation — as a proper PDF. You must see it before the signing code step, and once both sides have signed, the signed contract (with both signatures and timestamps) stays viewable and shareable for both the artist and the organiser. Proven in the running app with screen recordings.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-18T02:48:55.747Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
