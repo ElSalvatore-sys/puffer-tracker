@@ -1657,6 +1657,16 @@
       "durationMin": 0,
       "ts": "2026-06-18T02:48:55.747Z",
       "progressAfter": 96
+    },
+    {
+      "id": 128,
+      "project": "thebarapp",
+      "title": "Menu assistant understands typos and nicknames",
+      "detail": "When an owner types a menu change, the assistant now matches the dish even with a typo (\"flammkucheb\") or a short name (\"Flammkuchen\" for \"Flammkuchen Elsässer Art\"). If it isn't sure, it asks \"Did you mean …?\" instead of just refusing. A bare dish name with no instruction no longer turns into a mistaken \"new dish without a name\". Owners still review and confirm every change before anything is applied. Live now.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-18T23:00:22.095Z",
+      "progressAfter": 89
     }
   ],
   "weekHighlight": {
