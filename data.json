@@ -1677,6 +1677,16 @@
       "durationMin": 0,
       "ts": "2026-06-21T13:49:31.150Z",
       "progressAfter": 96
+    },
+    {
+      "id": 130,
+      "project": "dehgo",
+      "title": "Sensitive permit details left out for now",
+      "detail": "Decided the first version won't collect workers' residence-permit or immigration details. It's the privacy-safest choice and keeps the launch simpler, since that kind of sensitive data carries heavy legal duties. We can add it later if needed, with the lawyer's sign-off.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-21T13:49:35.303Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
