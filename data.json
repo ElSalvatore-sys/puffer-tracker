@@ -1687,6 +1687,16 @@
       "durationMin": 0,
       "ts": "2026-06-21T13:49:35.303Z",
       "progressAfter": 96
+    },
+    {
+      "id": 131,
+      "project": "dehgo",
+      "title": "AI kept switched off for the demo",
+      "detail": "The demo runs with every AI feature turned off and no AI keys on the machine — nothing is automated, people make each decision. It keeps things simple and clean for the legal review. AI can be switched on later as its own separate step.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-21T13:49:39.451Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
