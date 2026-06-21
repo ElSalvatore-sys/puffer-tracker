@@ -1667,6 +1667,16 @@
       "durationMin": 0,
       "ts": "2026-06-18T23:00:22.095Z",
       "progressAfter": 89
+    },
+    {
+      "id": 129,
+      "project": "dehgo",
+      "title": "Live private demo of the whole app",
+      "detail": "Stood up a private, invite-only demo of the full app — the venue side and the worker app running together — that the team can open over a secure link. The whole hiring journey worked end-to-end, including a real worker signing in by themselves. It runs from a computer today and goes onto the team's phones once Apple approves the app.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-21T13:49:31.150Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
