@@ -1697,6 +1697,16 @@
       "durationMin": 0,
       "ts": "2026-06-21T13:49:39.451Z",
       "progressAfter": 96
+    },
+    {
+      "id": 132,
+      "project": "bloghead",
+      "title": "Band bookings & privacy fixes live",
+      "detail": "The server update is live. Bands can now be booked as a group with each member signing their own contract, and an artist can start a deal with a venue themselves. Privacy was tightened: a guest signing link no longer shows the person's full email or the fee, and an artist's follower list is now private to them. A fresh backup was taken and test-restored before any change, and every health check passed afterwards — existing bookings carried over safely. One privacy item (hiding legal names on public profiles) was deliberately held back for later.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-06-22T02:58:49.303Z",
+      "progressAfter": 96
     }
   ],
   "weekHighlight": {
