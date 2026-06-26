@@ -1707,6 +1707,56 @@
       "durationMin": 0,
       "ts": "2026-06-22T02:58:49.303Z",
       "progressAfter": 96
+    },
+    {
+      "id": 133,
+      "project": "thebarapp",
+      "title": "Mapped exactly where the assistant lies",
+      "detail": "Ran 23 real questions past the in-app assistant (Wozi) on the live venue to map what it does well and badly. The good: it correctly refuses to show staff the revenue, handles back-and-forth conversation, and sounds on-brand. The problem: whenever it only knows a number (e.g. \"7 items low\") it confidently invents the details — it made up 6 of 7 low-stock item names, told a fake \"last week was down 15% because of bad weather\" story with invented figures, and even invented a weather forecast. Also caught it reading the wrong revenue table and occasionally slipping into English. This map is what the fix was built from.",
+      "status": "done",
+      "durationMin": 90,
+      "ts": "2026-06-26T12:44:50.182Z",
+      "progressAfter": 89
+    },
+    {
+      "id": 134,
+      "project": "thebarapp",
+      "title": "Found why the assistant makes things up",
+      "detail": "Wrote a long options study on how to give Wozi the venue’s real data on demand and stop it inventing answers. Headline finding: it doesn’t make things up because the AI is weak — it makes things up because it’s handed counts (\"55 items low\") instead of the actual records (which 55), so it fills the gap with invention. The fix is structural: fetch the exact data the moment it’s needed rather than pre-loading a summary. The study also covered how this scales to every new venue, how to force an honest \"I don’t have that\", and which AI tier to use.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-06-26T12:44:51.182Z",
+      "progressAfter": 89
+    },
+    {
+      "id": 135,
+      "project": "thebarapp",
+      "title": "Caught 4 serious flaws before building",
+      "detail": "Put the proposed design through a hard adversarial review before writing any code — 57 issues found, 4 of them serious. It caught a hidden third way venues are identified (reservations use yet another key) that would have made the bot wrongly say \"no reservations\" on a fully-booked night; a warning not to touch a shared piece of code that four working features depend on; and a missing \"is this even a data question?\" check. Every correction was folded into one corrected plan plus a proof-first build checklist.",
+      "status": "done",
+      "durationMin": 120,
+      "ts": "2026-06-26T12:44:52.182Z",
+      "progressAfter": 89
+    },
+    {
+      "id": 136,
+      "project": "thebarapp",
+      "title": "Proved the fix on live data first",
+      "detail": "Built the data-foundation fix against a fresh, re-runnable test scoreboard and proved it on real data before any deploy. Confirmed the two \"makes things up\" cases were genuinely broken today, then flipped them to passing. Caught a sneaky trap — the venue’s weekly briefing carries its own revenue numbers that could have falsely \"confirmed\" the fix — so the test ran on a separate sandbox venue and checked the real revenue straight against the database, not via the bot. Real before/after replies were shown for sign-off before anything shipped.",
+      "status": "done",
+      "durationMin": 150,
+      "ts": "2026-06-26T12:44:53.182Z",
+      "progressAfter": 89
+    },
+    {
+      "id": 137,
+      "project": "thebarapp",
+      "title": "Assistant now reads the real numbers",
+      "detail": "The data-foundation fix is live for the owners. Wozi now reads the correct revenue — the exact month-to-date figure, verified to the cent at 20.468,97 € — instead of a stale table, and names all real low-stock items (7 of 7) instead of inventing them. It stayed read-only against the live venue throughout, left the till figure untouched (9.389,90 € confirmed unchanged), and the test scoreboard went from red to green on both \"makes things up\" cases with zero regressions. Next up is the bigger step: giving Wozi proper on-demand tools so it never has to guess again.",
+      "status": "done",
+      "durationMin": 120,
+      "ts": "2026-06-26T12:44:54.182Z",
+      "progressAfter": 90
     }
   ],
   "weekHighlight": {
