@@ -1757,6 +1757,56 @@
       "durationMin": 120,
       "ts": "2026-06-26T12:44:54.182Z",
       "progressAfter": 90
+    },
+    {
+      "id": 138,
+      "project": "thebarapp",
+      "title": "WoziBot now fetches live data on demand",
+      "detail": "The big upgrade after the data-truth fix: instead of being handed one fixed summary, WoziBot now reaches for exactly the information a question needs, the moment it needs it, through eight dedicated lookups — inventory, revenue, the staff schedule, open shifts, reservations, recipes, who has called in absent, and the venue handbooks. So a manager can ask about tonight’s bookings, this month’s revenue to the cent, or what’s running low, and get the real answer pulled live — not a guess from a stale snapshot. This is the spine every future assistant skill plugs into.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-06-28T04:55:11.701Z",
+      "progressAfter": 91
+    },
+    {
+      "id": 139,
+      "project": "thebarapp",
+      "title": "Understands any phrasing — and never leaks",
+      "detail": "Made WoziBot both smarter at understanding and safer. It now recognises a real question however it’s worded (\"how’s the stock?\", \"are we doing well this month?\") and looks up the live answer, instead of only reacting to a few magic keywords. At the same time, who can see what is enforced on the server, not just hidden on screen: workers can’t see revenue or other staff’s private details; managers and owners can. When it can’t help, it refuses warmly and only points you to things your role is actually allowed to see — and even when it’s unsure, it says \"I don’t have that\" rather than inventing.",
+      "status": "done",
+      "durationMin": 180,
+      "ts": "2026-06-28T04:55:12.701Z",
+      "progressAfter": 91
+    },
+    {
+      "id": 140,
+      "project": "thebarapp",
+      "title": "New \"Tresor\" — the venue’s digital safe",
+      "detail": "Built a brand-new internal cash system from scratch — the venue’s own digital safe (Tresor). It keeps a running balance built from a history that can never be edited or deleted, even by us. The day’s counted cash (every bill and coin) is entered as a deposit that only raises the balance once an owner, finance person, or manager approves it. Money can be transferred out to the bank — owners and a new trusted \"Finance\" role can do it instantly, managers propose and an owner approves — and the safe can never go negative. It’s internal cash truth for owners and managers, not a tax system.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-06-28T04:55:13.701Z",
+      "progressAfter": 92
+    },
+    {
+      "id": 141,
+      "project": "thebarapp",
+      "title": "A vault that opens when you check the cash",
+      "detail": "Designed and built a genuinely beautiful screen for the safe, in the app’s Bento style. Opening it plays a vault sequence — a brass dial turns and settles, the door lifts, and the balance counts up from zero — then shows live cash-in and cash-out, any deposits still waiting for approval, the deposit and transfer actions, and the full history. Proper empty and loading states, not blank screens. The motion is deliberate: live, changing figures animate; settled facts like committed history appear instantly, because animating a fixed number would wrongly suggest it’s still being worked out. The founder approved the look and feel on his own iPhone.",
+      "status": "done",
+      "durationMin": 300,
+      "ts": "2026-06-28T04:55:14.701Z",
+      "progressAfter": 92
+    },
+    {
+      "id": 142,
+      "project": "thebarapp",
+      "title": "Safe proven to the cent — live on test venue",
+      "detail": "Ran the whole money journey — count and deposit, approve, transfer to the bank — against the real deployed system on a test venue, with every balance matching hand-calculation exactly and every safety guard firing: you can’t overdraw the safe, can’t count the same deposit twice, can’t approve your own transfer, and wrong cash totals are rejected. The full flow was recorded end to end, confirming the screen’s numbers always match the engine behind it. It’s live and proven on the test venue; the real pilot (Das Wohnzimmer) is deliberately switched off until the team chooses to run real cash through it — an owner’s timing decision, not an engineering step.",
+      "status": "done",
+      "durationMin": 180,
+      "ts": "2026-06-28T04:55:15.701Z",
+      "progressAfter": 93
     }
   ],
   "weekHighlight": {
