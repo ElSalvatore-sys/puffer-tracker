@@ -74,11 +74,12 @@ One entry per **big** step (feature wired end-to-end, phase done, or a blocker).
 - **State:** 100%, live; custom domain pending. Shown as a "minor" mini-card on the tracker.
 
 ### 5. ThePuffer OS (Glasses)  (tracker key: `pufferos`, accent `#38bdf8`)
-- **What:** hands-free "ask anything" voice assistant on **A02 smart glasses** — iPhone app pairs the glasses to Gemini Live (tap → speak through glasses → hear the answer). Phone-side port of the Mac experiment, ask-mode only (no translation/ambient/Hermes/local-model — deliberately out of scope).
-- **Repo:** `~/Developer/thepuffer-ios-glasses` (local-only, **no GitHub remote yet**; first build 2 Jul, staged/uncommitted). New repo, *not* a fork of `oasis-voice-bridge` — reuses only the proven config (model `gemini-3.1-flash-live-preview`, 16kHz-in/24kHz-out PCM, persona), not code.
-- **Stack:** SwiftUI, iOS 17+, Swift 6. No third-party deps — Gemini Live WebSocket (`BidiGenerateContent`) hand-rolled on `URLSessionWebSocketTask`. Project via `xcodegen` (`.xcodeproj` gitignored). Secrets: `GOOGLE_API_KEY` in gitignored `Config/*.xcconfig`.
-- **State (2 Jul):** ~45%. One-screen app built (button + status + transcript line), reacts to Bluetooth route changes for glasses connect/disconnect. Must run on a **real iPhone** — BT audio routing doesn't work in the Simulator.
-- **Honest blocker / caveat:** `UIBackgroundModes:[audio]` is set for pocket use — a real App Store review risk (fine for personal sideload; needs a push-to-talk/Live-Activities rethink before submission).
+- **What:** off-the-shelf **A02 smart glasses** turned into ThePuffer's own AI voice assistant (independent of the maker's app) — speak, hear the AI answer in your ear. Two codebases: the **Mac version (complete)** and the **iPhone version (next / current)**.
+- **Mac version — `oasis-voice-bridge`** (GitHub `ElSalvatore-sys/oasis-voice-bridge`, private): COMPLETE. Ask mode + live translation + Hermes/agent research delegation + always-on/ambient mode + hearing-protection volume ceiling + auto-saved transcripts, menu-bar controls. Glasses ↔ Gemini Live, proven on real hardware.
+- **iPhone version — `~/Developer/thepuffer-ios-glasses`** (local-only, **no GitHub remote yet**; first build 2 Jul, staged/uncommitted). New repo, *not* a fork — reuses only the proven config (model `gemini-3.1-flash-live-preview`, 16kHz-in/24kHz-out PCM, persona), not code. SwiftUI/iOS 17+/Swift 6, no third-party deps (Gemini Live `BidiGenerateContent` WebSocket hand-rolled on `URLSessionWebSocketTask`), `xcodegen` (`.xcodeproj` gitignored). Ask-mode only so far; must run on a **real iPhone** (BT audio routing dead in Simulator).
+- **Secrets:** `GOOGLE_API_KEY` in gitignored `Config/*.xcconfig` (iOS) / env (Mac). Never committed.
+- **State:** ~65%. Mac version done end-to-end; iPhone port is the active push toward "works anywhere, no computer."
+- **Honest caveat:** the iOS `UIBackgroundModes:[audio]` is set for pocket use — a real App Store review risk (fine for personal sideload; needs a push-to-talk/Live-Activities rethink before submission).
 
 ---
 

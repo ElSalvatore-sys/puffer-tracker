@@ -418,33 +418,33 @@
     },
     "pufferos": {
       "name": "ThePuffer OS (Glasses)",
-      "phase": "First build — proving glasses talk to the AI on a real iPhone",
+      "phase": "Mac version complete — building the iPhone version next",
       "accent": "#38bdf8",
       "gallery": [],
       "roadmap": [
         {
-          "label": "Plan locked",
+          "label": "Free from the maker's app",
           "status": "done"
         },
         {
-          "label": "Phone app built",
+          "label": "Voice assistant on glasses",
           "status": "done"
         },
         {
-          "label": "Ask-anything voice",
+          "label": "Live translation",
           "status": "done"
         },
         {
-          "label": "Test on the real glasses",
+          "label": "Research + always-on",
+          "status": "done"
+        },
+        {
+          "label": "iPhone version",
           "status": "current"
         },
         {
-          "label": "Everyday-use polish",
+          "label": "Works anywhere, no computer",
           "status": "next"
-        },
-        {
-          "label": "Beyond asking (translate & more)",
-          "status": "later"
         }
       ],
       "side": [
@@ -452,25 +452,67 @@
         "App Store audio-mode decision"
       ],
       "audit": {
-        "summary": "ThePuffer OS is the first step toward a voice assistant you wear — smart glasses you can simply talk to. This first build puts an 'ask anything' assistant on the iPhone that pairs with A02 smart glasses: you tap once, speak through the glasses, and hear the answer back in your ear — no screen, no typing. It reuses the setup already proven on the Mac, rebuilt for iPhone. It's an early build, running on a real phone; the next step is trying it on the real glasses in everyday life.",
+        "summary": "ThePuffer OS turns an off-the-shelf pair of smart glasses into ThePuffer's own AI voice assistant — free of the manufacturer's app, running on our own system. You speak, and an AI answers directly in your ear. The Mac version is complete and working: ask anything, live translation of the person in front of you, an always-on mode that needs no buttons, and a link to our research agent for spoken-back answers. Every step was proven on the real glasses, not assumptions. The next step is the iPhone version, so the glasses work anywhere with no computer needed.",
         "chapters": [
           {
             "when": "What it is",
-            "title": "A voice assistant you wear",
-            "what": "ThePuffer OS turns a pair of smart glasses into a hands-free assistant. You speak a question through the glasses and hear the answer back — no screen and no typing. This first version does one thing well: ask anything, get an answer.",
-            "why": "The goal is a genuinely hands-free assistant — the glasses are the interface, the phone just does the work in your pocket."
+            "title": "Our own AI on smart glasses",
+            "what": "We took an off-the-shelf pair of smart glasses and turned them into ThePuffer's own voice assistant — you speak, and an AI answers straight into your ear. No screen, no typing.",
+            "why": "The glasses become a genuinely hands-free assistant you wear — the AI is ours, not the manufacturer's."
           },
           {
-            "when": "2 July",
-            "title": "First build, on a real phone",
-            "what": "Built the iPhone app that connects the glasses to the AI: tap to start, speak, hear the reply, tap to stop. It reuses the setup we already proved on the Mac, rebuilt for iPhone from scratch.",
-            "why": "Getting this plumbing right on a real device is the whole first milestone — everything else builds on top of it."
+            "when": "Step 1",
+            "title": "Freed from the maker's app",
+            "what": "The glasses no longer depend on the manufacturer's app — they connect directly to our own system, so we control exactly what runs on them.",
+            "why": "Full control is the foundation. Without it, everything after this would be at the mercy of someone else's app."
+          },
+          {
+            "when": "Step 2",
+            "title": "The voice assistant, working",
+            "what": "Built the core assistant — speak, and an AI answers directly in your ear. Tested live on the real glasses from day one.",
+            "why": "This is the heart of the product: talk to the glasses, get an answer. Everything else builds on it."
+          },
+          {
+            "when": "Step 3",
+            "title": "Simple controls, notes saved automatically",
+            "what": "Start and stop the assistant from the Mac's menu bar, with a clear indicator when it's listening. Every conversation is saved as written notes automatically.",
+            "why": "Easy to control, and nothing said is ever lost — you get a written record without any effort."
+          },
+          {
+            "when": "Step 4",
+            "title": "Live translation in your ear",
+            "what": "Someone near you speaks a foreign language — you hear it in German (or any language you pick) in your ear, in real time. You can switch the target language on the fly.",
+            "why": "Turns the glasses into a real-time interpreter — one of the most useful things you can wear."
+          },
+          {
+            "when": "Step 5",
+            "title": "It can research for you",
+            "what": "Connected the assistant to our agent system: it can hand a task to a second AI that looks things up, does the research, and reports the answer back — spoken into your ear.",
+            "why": "It goes from answering off the top of its head to actually going away, finding out, and telling you."
+          },
+          {
+            "when": "Step 6",
+            "title": "Always-on — no buttons",
+            "what": "Added an always-on mode: the assistant listens continuously, understands when it's being spoken to, and stays quiet otherwise. No button pressing.",
+            "why": "This is what 'hands-free' really means — you just talk, and it knows when you mean it."
+          },
+          {
+            "when": "Step 7",
+            "title": "Hearing protection built in",
+            "what": "Put a volume ceiling on everything the glasses play, so no sudden loud output can hurt the wearer. Built after a real incident — found and fixed the same day.",
+            "why": "Safety comes first when something sits on your ears. A real scare made this non-negotiable."
+          },
+          {
+            "when": "Throughout",
+            "title": "Proven on real glasses, and backed up",
+            "what": "Nothing shipped on assumptions — every stage was proven on the actual glasses before moving on, which caught several bugs only real-world testing could reveal. The whole project is on private GitHub and set up to run on more than one machine.",
+            "why": "Real hardware tells the truth, and the work is safe if any single computer fails."
           },
           {
             "when": "Now",
-            "title": "Next: try it on the real glasses",
-            "what": "The app is built and ready to test with a real pair of A02 glasses in everyday situations. One deliberate limit for now: it only does 'ask anything' — translation and other modes are parked on purpose to keep this first version simple and honest.",
-            "why": "Prove one thing works really well before adding more."
+            "title": "Next: the iPhone version",
+            "what": "The Mac version is complete and working — assistant, translation, always-on, research. The next step is the iPhone version, where the glasses connect straight to the phone so the assistant works anywhere, with no computer needed.",
+            "why": "The phone is what you carry everywhere — that's what makes the glasses truly go-anywhere."
           }
         ]
       }
@@ -1876,6 +1918,16 @@
       "durationMin": 180,
       "ts": "2026-07-02T02:18:34.624Z",
       "progressAfter": 45
+    },
+    {
+      "id": 144,
+      "project": "pufferos",
+      "title": "Mac version complete — talk, translate, research",
+      "detail": "The glasses now run our own assistant end to end: ask anything, live translation in your ear, always-on hands-free mode, and a link to our research agent for spoken-back answers. Hearing protection added after a real incident. All proven on the real glasses. Next up: the iPhone version so it works anywhere.",
+      "status": "done",
+      "durationMin": 240,
+      "ts": "2026-07-02T02:22:00.513Z",
+      "progressAfter": 65
     }
   ],
   "weekHighlight": {
