@@ -73,6 +73,13 @@ One entry per **big** step (feature wired end-to-end, phase done, or a blocker).
 - **What:** a restaurant website. Live at `number-one-restaurant.vercel.app`.
 - **State:** 100%, live; custom domain pending. Shown as a "minor" mini-card on the tracker.
 
+### 5. ThePuffer OS (Glasses)  (tracker key: `pufferos`, accent `#38bdf8`)
+- **What:** hands-free "ask anything" voice assistant on **A02 smart glasses** — iPhone app pairs the glasses to Gemini Live (tap → speak through glasses → hear the answer). Phone-side port of the Mac experiment, ask-mode only (no translation/ambient/Hermes/local-model — deliberately out of scope).
+- **Repo:** `~/Developer/thepuffer-ios-glasses` (local-only, **no GitHub remote yet**; first build 2 Jul, staged/uncommitted). New repo, *not* a fork of `oasis-voice-bridge` — reuses only the proven config (model `gemini-3.1-flash-live-preview`, 16kHz-in/24kHz-out PCM, persona), not code.
+- **Stack:** SwiftUI, iOS 17+, Swift 6. No third-party deps — Gemini Live WebSocket (`BidiGenerateContent`) hand-rolled on `URLSessionWebSocketTask`. Project via `xcodegen` (`.xcodeproj` gitignored). Secrets: `GOOGLE_API_KEY` in gitignored `Config/*.xcconfig`.
+- **State (2 Jul):** ~45%. One-screen app built (button + status + transcript line), reacts to Bluetooth route changes for glasses connect/disconnect. Must run on a **real iPhone** — BT audio routing doesn't work in the Simulator.
+- **Honest blocker / caveat:** `UIBackgroundModes:[audio]` is set for pocket use — a real App Store review risk (fine for personal sideload; needs a push-to-talk/Live-Activities rethink before submission).
+
 ---
 
 ## Not (yet) on the tracker

@@ -415,6 +415,65 @@
         "Owner walkthrough",
         "Custom domain go-live"
       ]
+    },
+    "pufferos": {
+      "name": "ThePuffer OS (Glasses)",
+      "phase": "First build — proving glasses talk to the AI on a real iPhone",
+      "accent": "#38bdf8",
+      "gallery": [],
+      "roadmap": [
+        {
+          "label": "Plan locked",
+          "status": "done"
+        },
+        {
+          "label": "Phone app built",
+          "status": "done"
+        },
+        {
+          "label": "Ask-anything voice",
+          "status": "done"
+        },
+        {
+          "label": "Test on the real glasses",
+          "status": "current"
+        },
+        {
+          "label": "Everyday-use polish",
+          "status": "next"
+        },
+        {
+          "label": "Beyond asking (translate & more)",
+          "status": "later"
+        }
+      ],
+      "side": [
+        "Google AI (Gemini) key",
+        "App Store audio-mode decision"
+      ],
+      "audit": {
+        "summary": "ThePuffer OS is the first step toward a voice assistant you wear — smart glasses you can simply talk to. This first build puts an 'ask anything' assistant on the iPhone that pairs with A02 smart glasses: you tap once, speak through the glasses, and hear the answer back in your ear — no screen, no typing. It reuses the setup already proven on the Mac, rebuilt for iPhone. It's an early build, running on a real phone; the next step is trying it on the real glasses in everyday life.",
+        "chapters": [
+          {
+            "when": "What it is",
+            "title": "A voice assistant you wear",
+            "what": "ThePuffer OS turns a pair of smart glasses into a hands-free assistant. You speak a question through the glasses and hear the answer back — no screen and no typing. This first version does one thing well: ask anything, get an answer.",
+            "why": "The goal is a genuinely hands-free assistant — the glasses are the interface, the phone just does the work in your pocket."
+          },
+          {
+            "when": "2 July",
+            "title": "First build, on a real phone",
+            "what": "Built the iPhone app that connects the glasses to the AI: tap to start, speak, hear the reply, tap to stop. It reuses the setup we already proved on the Mac, rebuilt for iPhone from scratch.",
+            "why": "Getting this plumbing right on a real device is the whole first milestone — everything else builds on top of it."
+          },
+          {
+            "when": "Now",
+            "title": "Next: try it on the real glasses",
+            "what": "The app is built and ready to test with a real pair of A02 glasses in everyday situations. One deliberate limit for now: it only does 'ask anything' — translation and other modes are parked on purpose to keep this first version simple and honest.",
+            "why": "Prove one thing works really well before adding more."
+          }
+        ]
+      }
     }
   },
   "log": [
@@ -1807,6 +1866,16 @@
       "durationMin": 180,
       "ts": "2026-06-28T04:55:15.701Z",
       "progressAfter": 93
+    },
+    {
+      "id": 143,
+      "project": "pufferos",
+      "title": "First build — glasses talk to the AI",
+      "detail": "Built the iPhone app that pairs with A02 smart glasses: tap once, speak, hear the answer back. Ask-anything only for now, running on a real phone. Reuses the setup already proven on the Mac.",
+      "status": "done",
+      "durationMin": 180,
+      "ts": "2026-07-02T02:18:34.624Z",
+      "progressAfter": 45
     }
   ],
   "weekHighlight": {
