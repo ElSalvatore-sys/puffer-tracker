@@ -1928,6 +1928,16 @@
       "durationMin": 240,
       "ts": "2026-07-02T02:22:00.513Z",
       "progressAfter": 65
+    },
+    {
+      "id": 145,
+      "project": "thebarapp",
+      "title": "First Spoon film ready for feedback",
+      "detail": "German and English 105-second first cuts are ready for Ali to review. Both include app preview screens, animated AI examples, original music and temporary narration. Automatic morning delivery is labelled as a concept. Creative approval and final voice selection are still pending; the films have not been published.",
+      "status": "done",
+      "durationMin": 0,
+      "ts": "2026-10-30T14:52:55.772Z",
+      "progressAfter": 93
     }
   ],
   "weekHighlight": {
